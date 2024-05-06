@@ -327,14 +327,6 @@
       "default": "HongKong"
     },
     {
-      "tag":"Wechat",
-      "type":"selector",
-      "outbounds":[
-        "direct",
-        "proxy"
-      ]
-    },
-    {
       "tag":"China",
       "type":"selector",
       "outbounds":[
@@ -610,10 +602,6 @@
         "outbound": "Apple"
       },
       {
-        "rule_set": "geosite-wechat",
-        "outbound": "Wechat"
-      },
-      {
         "rule_set": "geosite-amazon",
         "outbound": "Apple"
       },
@@ -644,6 +632,14 @@
       {
         "ip_is_private": true,
         "outbound": "direct"
+      },
+      {
+        "rule_set": "geosite-wechat",
+        "outbound": "China"
+      },
+      {
+        "rule_set": "geoip-cn",
+        "outbound": "China"
       },
       {
         "rule_set": "geoip-cn",

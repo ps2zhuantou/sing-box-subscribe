@@ -17,12 +17,12 @@
     "servers": [
       {
         "tag": "国际DNS",
-        "address": "https://8.8.8.8/dns-query",
+        "address": "tls://8.8.8.8",
         "detour": "🚀 默认出站"
       },
       {
         "tag": "国内DNS",
-        "address": "https://223.5.5.5/dns-query",
+        "address": "tls://223.5.5.5",
         "detour": "🐢 直连"
       },
       {
@@ -384,7 +384,7 @@
             "rule_set": ["download-process"]
           },
           {
-            "rule_set": ["geo_geosite_wechat", "geoip_cn", "geosite_cn"],
+            "rule_set": ["geoip_cn", "geosite_cn"],
             "invert": true
           }
         ],

@@ -436,7 +436,7 @@
             "process_name": ["aria2c", "aria2c.exe"]
           },
           {
-            "rule_set": ["geo_geosite_wechat", "geo_geoip_cn", "geo_geosite_cn"],
+            "rule_set": ["geo_geoip_cn", "geo_geosite_cn"],
             "invert": true
           }
         ],

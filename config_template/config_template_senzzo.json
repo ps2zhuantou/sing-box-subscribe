@@ -18,7 +18,7 @@
       {
         "tag": "国际DNS",
         "address": "tls://8.8.8.8",
-	"strategy": "ipv4_only",
+	"strategy": "prefer_ipv4",
         "detour": "🚀 默认出站"
       },
       {
@@ -63,6 +63,7 @@
     {
       "type": "tun",
       "inet4_address": "172.19.0.1/30",
+      "inet6_address": "fdfe:dcba:9876::1/126",
       "auto_route": true,
       "strict_route": true,
       "stack": "system",

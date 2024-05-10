@@ -18,11 +18,13 @@
       {
         "tag": "国际DNS",
         "address": "tls://8.8.8.8",
+	"strategy": "ipv4_only",
         "detour": "🚀 默认出站"
       },
       {
         "tag": "国内DNS",
         "address": "tls://223.5.5.5",
+	"strategy": "ipv4_only",
         "detour": "🐢 直连"
       },
       {
@@ -55,10 +57,7 @@
         "rule_set": "geosite_geolocation-!cn",
         "server": "国际DNS"
       }
-    ],
-    "final": "国际DNS",
-    "strategy": "ipv4_only",
-    "disable_cache": false
+    ]
   },
   "inbounds": [
     {

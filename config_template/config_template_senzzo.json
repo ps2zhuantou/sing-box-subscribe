@@ -131,11 +131,25 @@
       ]
     },
     {
+      "tag": "🤖 AI",
+      "type": "selector",
+      "outbounds": [
+        "⚡ 日韩新",
+        "🐢 直连",
+        "📌 单选节点",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇸 美国节点"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "tag": "📥 Download",
       "type": "selector",
       "outbounds": [
         "🐢 直连",
-		"⚡ 日韩新",       
+	"⚡ 日韩新",       
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
@@ -163,21 +177,7 @@
       "type": "selector",
       "outbounds": [
         "🐢 直连",
-		"⚡ 日韩新",
-        "📌 单选节点",
-        "🇭🇰 香港节点",
-        "🇯🇵 日本节点",
-        "🇸🇬 新加坡节点",
-        "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "🤖 AI",
-      "type": "selector",
-      "outbounds": [
-        "⚡ 日韩新",
-        "🐢 直连",
+	"⚡ 日韩新",
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",

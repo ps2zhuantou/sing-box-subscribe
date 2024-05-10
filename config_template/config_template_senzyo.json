@@ -72,7 +72,7 @@
         "server": "国际DNS"
       }
     ],
-    "final": "国内DNS",
+    "final": "国际DNS",
     "strategy": "ipv4_only",
     "disable_cache": false
   },
@@ -82,7 +82,7 @@
       "inet4_address": "172.19.0.1/30",
       "gso": true,
       "auto_route": true,
-      "strict_route": false,
+      "strict_route": true,
       "endpoint_independent_nat": false,
       "stack": "system",
       "platform": {

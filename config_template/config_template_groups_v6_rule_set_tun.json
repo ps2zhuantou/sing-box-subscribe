@@ -125,14 +125,14 @@
       "tag":"Perplexity",
       "type":"selector",
       "outbounds":[
-        "America",
         "JKS",
         "TaiWan",
         "Singapore",
         "Japan",
+        "America",
         "Others"
       ],
-      "default": "JKS"
+      "default": "America"
     },
     {
       "tag":"Google",

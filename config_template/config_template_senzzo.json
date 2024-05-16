@@ -144,6 +144,20 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "🤖 Perplexity",
+      "type": "selector",
+      "outbounds": [
+        "🇯🇵 日本节点",
+	"⚡ 日韩新",
+        "🐢 直连",
+        "📌 单选节点",
+        "🇭🇰 香港节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇸 美国节点"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "tag": "📥 Download",
       "type": "selector",
       "outbounds": [
@@ -414,6 +428,10 @@
         "outbound": "☁️ OneDrive"
       },
       {
+        "rule_set": "geosite_perplexity",
+        "outbound": "🤖 Perplexity"
+      },
+      {
         "rule_set": "geo_geosite_ai",
         "outbound": "🤖 AI"
       },
@@ -531,7 +549,15 @@
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
-	  {
+      {
+        "tag": "geosite_perplexity",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/perplexity.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "5d"
+      },
+      {
         "tag": "geo_geosite_ai",
         "type": "remote",
         "format": "binary",

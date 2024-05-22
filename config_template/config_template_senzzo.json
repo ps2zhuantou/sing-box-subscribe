@@ -94,7 +94,6 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -140,7 +139,6 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -155,7 +153,6 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -170,7 +167,6 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-        "🇹🇼 台湾节点",
 	"🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -185,7 +181,6 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -200,7 +195,6 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -215,7 +209,6 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -230,7 +223,6 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -245,7 +237,6 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -260,7 +251,6 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -275,7 +265,6 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -334,21 +323,6 @@
         {
           "action": "include",
           "keywords": ["🇺🇸|美国|US|USA|United States"]
-        }
-      ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
-    },
-    {
-      "tag": "🇹🇼 台湾节点",
-      "type": "urltest",
-      "outbounds": ["{all}"],
-      "interrupt_exist_connections": true,
-      "filter": [
-        {
-          "action": "include",
-          "keywords": ["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]
         }
       ],
       "url": "https://www.gstatic.com/generate_204",

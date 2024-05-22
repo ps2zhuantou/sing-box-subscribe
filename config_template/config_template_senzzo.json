@@ -393,7 +393,7 @@
         "domain_suffix": [
           ".duckdns.org"
         ],
-        "outbound": "direct"
+        "outbound": "🐢 直连"
       },
       {
         "type": "logical",

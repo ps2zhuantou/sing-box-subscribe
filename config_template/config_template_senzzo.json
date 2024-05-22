@@ -390,6 +390,12 @@
         "outbound": "🚀 默认出站"
       },
       {
+        "domain_suffix": [
+          ".duckdns.org"
+        ],
+        "outbound": "direct"
+      },
+      {
         "type": "logical",
         "mode": "and",
         "rules": [

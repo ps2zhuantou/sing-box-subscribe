@@ -544,10 +544,6 @@
         "outbound": "🤖 AI"
       },
       {
-        "rule_set": "geosite_openai",
-        "outbound": "🤖 OpenAI"
-      },
-      {
         "rule_set": "geosite_microsoft",
         "outbound": "🪟 Microsoft"
       },

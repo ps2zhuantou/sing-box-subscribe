@@ -554,7 +554,8 @@
       },
       {
         "rule_set": [
-          "geoip_cn",
+          "geo_geosite_wechat",
+	  "geoip_cn",
           "geosite_cn"
         ],
         "outbound": "🐢 直连"
@@ -704,6 +705,14 @@
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/geolocation-!cn.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
+      },
+      {
+        "tag": "geo_geosite_wechat",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Toperlock/sing-box-geosite/main/rule/WeChat.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "15d"
       },
       {
         "tag": "geoip_cn",

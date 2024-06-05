@@ -172,7 +172,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "HongKong"
     },
     {
       "tag":"Facebook",
@@ -185,7 +186,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "HongKong"
     },
     {
       "tag":"BiliBili",
@@ -320,7 +322,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "HongKong"
     },
     {
       "tag":"Global",

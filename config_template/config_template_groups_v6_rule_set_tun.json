@@ -8,9 +8,9 @@
       "external_ui_download_detour": "direct",
       "default_mode": "rule"
     },
-  "cache_file": {
-    "enabled": true,
-    "store_fakeip": false
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": false
     }
   },
   "dns": {
@@ -51,7 +51,7 @@
       {
         "rule_set": "geosite-cn",
         "server": "localDns"
-      },   
+      },
       {
         "clash_mode": "direct",
         "server": "localDns"
@@ -72,6 +72,7 @@
     {
       "type": "tun",
       "inet4_address": "172.19.0.1/30",
+	  "inet6_address": "fdfe:dcba:9876::1/126",
       "mtu": 9000,
       "auto_route": true,
       "strict_route": true,
@@ -519,15 +520,12 @@
         "outbound": "proxy"
       },
       {
-        "domain": [
+        "domain":[
           "clash.razord.top",
           "yacd.metacubex.one",
           "yacd.haishan.me",
           "d.metacubex.one"
         ],
-        "outbound": "direct"
-      },
-      {
         "domain_suffix": [
           ".duckdns.org"
         ],
@@ -566,7 +564,7 @@
         "outbound": "Telegram"
       },
       {
-        "rule_set":"geoip-twitter",
+        "rule_set": "geoip-twitter",
         "outbound": "Twitter"
       },
       {
@@ -578,7 +576,10 @@
         "outbound": "Facebook"
       },
       {
-        "rule_set":["geosite-facebook","geosite-instagram"],
+        "rule_set": [
+          "geosite-facebook",
+          "geosite-instagram"
+        ],
         "outbound": "Facebook"
       },
       {

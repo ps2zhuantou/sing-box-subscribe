@@ -124,7 +124,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "📌 单选节点",
@@ -317,7 +317,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🇯🇵 日本节点",
@@ -336,7 +336,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🇰🇷 韩国节点",
@@ -355,7 +355,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🇹🇼 台湾节点",
@@ -374,7 +374,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🇸🇬 新加坡节点",
@@ -393,7 +393,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🇺🇸 美国节点",
@@ -412,7 +412,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🐢 直连",

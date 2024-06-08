@@ -31,12 +31,7 @@
         "outbound": "any",
         "server": "国内DNS"
       },
-      {
-        "rule_set": "geosite_category-ads-all",
-        "server": "阻断DNS"
-      },
-      {
-        "rule_set": [
+      rule_set": [
           "geoip_cn",
           "geosite_cn"
         ],

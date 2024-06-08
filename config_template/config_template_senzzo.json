@@ -59,8 +59,10 @@
         "server": "国际DNS"
       }
     ],
-    "final": "国内DNS",
-    "strategy": "ipv4_only"
+    "strategy": "ipv4_only",
+    "disable_cache": true,
+    "disable_expire": false,
+    "independent_cache": true"
   },
   "inbounds": [
     {

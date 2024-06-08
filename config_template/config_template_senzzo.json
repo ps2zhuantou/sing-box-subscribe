@@ -475,7 +475,7 @@
         "outbound": "🚀 默认出站"
       },
       {
-        "rule_set": ["geo_geosite_wechat", "geoip_cn", "geosite_cn"],
+        "rule_set": ["geo_geosite_wechat", "geoip_cn", "geosite_geolocation-cn"],
         "outbound": "🐢 直连"
       }
     ],
@@ -665,7 +665,7 @@
         "update_interval": "3d"
       },
       {
-        "tag": "geosite_cn",
+        "tag": "geosite_geolocation-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/cn.srs",

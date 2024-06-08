@@ -71,6 +71,7 @@
       "auto_route": true,
       "strict_route": true,
       "stack": "system",
+      "endpoint_independent_nat": false,
       "exclude_package": ["com.android.captiveportallogin"],
       "platform": {
         "http_proxy": {

@@ -49,7 +49,7 @@
       }
     ],
     "strategy": "ipv4_only",
-    "disable_cache": true,
+    "disable_cache": false,
     "disable_expire": false,
     "independent_cache": true
   },
@@ -59,8 +59,7 @@
       "inet4_address": "172.19.0.1/30",
       "auto_route": true,
       "strict_route": true,
-      "stack": "system",
-      "endpoint_independent_nat": false,
+      "stack": "mixed",
       "exclude_package": ["com.android.captiveportallogin"],
       "platform": {
         "http_proxy": {
@@ -88,8 +87,9 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -120,7 +120,7 @@
         {
           "action": "exclude",
           "keywords": [
-            "剩余|流量|有效|时间|到期|expire|地址|网址|官网|自动|最优|最快|导航"
+            "剩余|流量|有效|时间|到期|expire|Expire|traffic|Traffic|地址|网址|官网|自动|最优|最快"
           ]
         }
       ]
@@ -135,14 +135,15 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
         "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
     },
-    {
-      "tag": "🤖 AI",
+	{
+	  "tag": "🤖 AI",
       "type": "selector",
       "outbounds": [
         "⚡ 日韩新",
@@ -151,22 +152,22 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
+	    "🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
     },
-    {
+	{
       "tag": "🤖 Perplexity",
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本节点",
-	"⚡ 日韩新",
+	    "⚡ 日韩新",
         "🐢 直连",
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
+	    "🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -175,14 +176,15 @@
       "tag": "📥 Download",
       "type": "selector",
       "outbounds": [
+        "⚡ 日韩新",
         "🐢 直连",
-	"⚡ 日韩新",       
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
-	"🇺🇸 美国节点"
+        "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
     },
@@ -195,8 +197,9 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -205,13 +208,14 @@
       "tag": "🎮 Game",
       "type": "selector",
       "outbounds": [
+        "⚡ 日韩新",
         "🐢 直连",
-	"⚡ 日韩新",
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -225,8 +229,9 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -240,8 +245,9 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -250,13 +256,14 @@
       "tag": "☁️ OneDrive",
       "type": "selector",
       "outbounds": [
-        "🐢 直连",
         "⚡ 日韩新",
+        "🐢 直连",
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -270,8 +277,9 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -285,8 +293,9 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -322,14 +331,14 @@
       "tolerance": 50
     },
     {
-      "tag": "🇸🇬 新加坡节点",
+      "tag": "🇰🇷 韩国节点",
       "type": "urltest",
       "outbounds": ["{all}"],
       "interrupt_exist_connections": true,
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇸🇬|新加坡|SG|Singapore"]
+          "keywords": ["🇰🇷|韩国|KR|South Korea"]
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -345,6 +354,21 @@
         {
           "action": "include",
           "keywords": ["🇹🇼|台湾|TW|Taiwan"]
+        }
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
+    },
+    {
+      "tag": "🇸🇬 新加坡节点",
+      "type": "urltest",
+      "outbounds": ["{all}"],
+      "interrupt_exist_connections": true,
+      "filter": [
+        {
+          "action": "include",
+          "keywords": ["🇸🇬|新加坡|SG|Singapore"]
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -406,7 +430,7 @@
         "outbound": "🚀 默认出站"
       },
       {
-        "rule_set": "geoip_private",
+        "ip_is_private": true,
         "outbound": "🐢 直连"
       },
       {
@@ -426,7 +450,7 @@
         ],
         "outbound": "🚀 默认出站"
       },
-      {
+	  {
         "domain_suffix": [
           ".duckdns.org"
         ],
@@ -440,7 +464,7 @@
             "rule_set": ["download-process"]
           },
           {
-            "rule_set": ["geo_geosite_wechat", "geoip_cn", "geosite_geolocation-cn"],
+            "rule_set": ["geosite_wechat", "geoip_cn", "geosite_geolocation-cn"],
             "invert": true
           }
         ],
@@ -459,7 +483,7 @@
         "outbound": "🎮 Game"
       },
       {
-        "rule_set": ["geosite_youtube", "geoip_google", "geosite_google", "geosite_github"],
+        "rule_set": ["geoip_google", "geosite_google"],
         "outbound": "🔎 Google"
       },
       {
@@ -470,7 +494,7 @@
         "rule_set": "geosite_onedrive",
         "outbound": "☁️ OneDrive"
       },
-      {
+	  {
         "rule_set": "geosite_perplexity",
         "outbound": "🤖 Perplexity"
       },
@@ -491,24 +515,16 @@
         "outbound": "🚀 默认出站"
       },
       {
-        "rule_set": ["geo_geosite_wechat", "geoip_cn", "geosite_geolocation-cn"],
+        "rule_set": ["geosite_wechat", "geoip_cn", "geosite_geolocation-cn"],
         "outbound": "🐢 直连"
       }
     ],
     "rule_set": [
       {
-        "tag": "geoip_private",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geoip/private.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
-      },
-      {
         "tag": "geosite_private",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/private.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/private.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -516,7 +532,7 @@
         "tag": "geosite_category-ads-all",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-ads-all.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/category-ads-all.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -532,7 +548,7 @@
         "tag": "geosite_apple",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/apple.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/apple.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -540,7 +556,7 @@
         "tag": "geosite_category-games@cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-games@cn.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/category-games@cn.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -548,7 +564,7 @@
         "tag": "geosite_category-games",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-games.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/category-games.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -556,23 +572,7 @@
         "tag": "geoip_google",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geoip/google.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
-      },
-      {
-        "tag": "geosite_github",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/github.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
-      },
-      {
-        "tag": "geosite_youtube",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/youtube.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geoip/google.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -580,7 +580,7 @@
         "tag": "geosite_google",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/google.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/google.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -588,7 +588,7 @@
         "tag": "geoip_facebook",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geoip/facebook.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geoip/facebook.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -596,7 +596,7 @@
         "tag": "geosite_meta",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/meta.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/meta.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -604,15 +604,15 @@
         "tag": "geosite_onedrive",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/onedrive.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/onedrive.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
-      {
+	  {
         "tag": "geosite_perplexity",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/perplexity.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/perplexity.srs",
         "download_detour": "🐢 直连",
         "update_interval": "5d"
       },
@@ -620,7 +620,7 @@
         "tag": "geo_geosite_ai",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/ai.srs",
+        "url": "https://mirror.ghproxy.com/https://github.com/DustinWin/ruleset_geodata/raw/sing-box-ruleset/ai.srs",
         "download_detour": "🐢 直连",
         "update_interval": "5d"
       },
@@ -628,7 +628,7 @@
         "tag": "geosite_openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/openai.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/openai.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -636,7 +636,7 @@
         "tag": "geosite_microsoft",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/microsoft.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/microsoft.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -644,7 +644,7 @@
         "tag": "geoip_telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geoip/telegram.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geoip/telegram.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -652,7 +652,7 @@
         "tag": "geosite_telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/telegram.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/telegram.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -660,12 +660,12 @@
         "tag": "geosite_geolocation-!cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/geolocation-!cn.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/geolocation-!cn.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
 	  {
-        "tag": "geo_geosite_wechat",
+        "tag": "geosite_wechat",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Toperlock/sing-box-geosite/main/rule/WeChat.srs",
@@ -676,7 +676,7 @@
         "tag": "geoip_cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geoip/cn.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geoip/cn.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },
@@ -684,7 +684,7 @@
         "tag": "geosite_geolocation-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/cn.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/geolocation-cn.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       }

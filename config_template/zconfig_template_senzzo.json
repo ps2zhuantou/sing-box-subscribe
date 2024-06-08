@@ -142,7 +142,8 @@
       ],
       "interrupt_exist_connections": true
     },
-	"tag": "🤖 AI",
+    {  
+      "tag": "🤖 AI",
       "type": "selector",
       "outbounds": [
         "⚡ 日韩新",
@@ -156,8 +157,8 @@
       ],
       "interrupt_exist_connections": true
     },
-	{
-    "tag": "🤖 Perplexity",
+    {
+      "tag": "🤖 Perplexity",
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本节点",

@@ -31,11 +31,13 @@
         "outbound": "any",
         "server": "国内DNS"
       },
-      rule_set": [
-          "geoip_cn",
-          "geosite_cn"
-        ],
+      {
+        "rule_set": "geosite_geolocation-cn",
         "server": "国内DNS"
+      },
+      {
+        "rule_set": "geosite_geolocation-!cn",
+        "server": "国际DNS"
       },
       {
         "clash_mode": "direct",
@@ -43,10 +45,6 @@
       },
       {
         "clash_mode": "global",
-        "server": "国际DNS"
-      },
-      {
-        "rule_set": "geosite_geolocation-!cn",
         "server": "国际DNS"
       }
     ],

@@ -126,6 +126,23 @@
       ]
     },
     {
+      "tag": "📢 广告",
+      "type": "selector",
+      "outbounds": [
+        "🚫 阻断",
+        "⚡ 日韩新",
+        "🐢 直连",
+        "📌 单选节点",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇹🇼 台湾节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇸 美国节点"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "tag": "🤖 AI",
       "type": "selector",
       "outbounds": [
@@ -399,7 +416,7 @@
       },
       {
         "rule_set": "geosite_category-ads-all",
-        "outbound": "🚫 阻断"
+        "outbound": "📢 广告"
       },
       {
         "domain_suffix": [

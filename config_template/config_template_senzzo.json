@@ -424,7 +424,7 @@
             "rule_set": ["download-process"]
           },
           {
-            "rule_set": ["geoip_cn", "geosite_cn"],
+            "rule_set": ["geoip_cn", "geosite_geolocation-cn"],
             "invert": true
           }
         ],

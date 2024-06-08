@@ -109,7 +109,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "📌 单选节点",
@@ -142,8 +142,8 @@
       ],
       "interrupt_exist_connections": true
     },
-    {  
-      "tag": "🤖 AI",
+	{
+	  "tag": "🤖 AI",
       "type": "selector",
       "outbounds": [
         "⚡ 日韩新",
@@ -152,22 +152,22 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
+	    "🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
     },
-    {
+	{
       "tag": "🤖 Perplexity",
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本节点",
-	"⚡ 日韩新",
+	    "⚡ 日韩新",
         "🐢 直连",
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇸🇬 新加坡节点",
-	"🇹🇼 台湾节点",
+	    "🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -313,7 +313,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🇯🇵 日本节点",
@@ -328,7 +328,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🇰🇷 韩国节点",
@@ -343,7 +343,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🇹🇼 台湾节点",
@@ -358,7 +358,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🇸🇬 新加坡节点",
@@ -373,7 +373,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🇺🇸 美国节点",
@@ -388,7 +388,7 @@
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 0
+      "tolerance": 50
     },
     {
       "tag": "🐢 直连",

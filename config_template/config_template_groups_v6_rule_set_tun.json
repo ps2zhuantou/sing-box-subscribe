@@ -116,7 +116,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "JKS"
     },
@@ -129,7 +130,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "America"
     },
@@ -143,7 +145,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "HongKong"
     },
@@ -157,7 +160,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "HongKong"
     },
@@ -171,7 +175,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "HongKong"
     },
@@ -185,7 +190,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "HongKong"
     },
@@ -196,7 +202,8 @@
         "direct",
         "JKS",
         "HongKong",
-        "TaiWan"
+        "TaiWan",
+        "proxy"
       ]
     },
     {
@@ -209,7 +216,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "TaiWan"
     },
@@ -223,7 +231,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "HongKong"
     },
@@ -236,7 +245,8 @@
         "TaiWan",
         "Singapore",
         "Japan",
-        "America"
+        "America",
+        "proxy"
       ],
       "default": "HongKong"
     },
@@ -250,7 +260,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "HongKong"
     },
@@ -264,7 +275,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "HongKong"
     },
@@ -279,7 +291,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ]
     },
     {
@@ -293,7 +306,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "JKS"
     },
@@ -308,7 +322,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ]
     },
     {
@@ -321,7 +336,8 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Others",
+        "proxy"
       ],
       "default": "HongKong"
     },

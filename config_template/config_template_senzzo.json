@@ -120,7 +120,7 @@
         {
           "action": "include",
           "keywords": [
-            "🇯🇵|日本|JP|Japan|🇰🇷|韩国|KR|South Korea|🇹🇼|台湾|TW|Taiwan|🇸🇬|新加坡|SG|Singapore"
+          "🇯🇵|日本|JP|Japan|🇰🇷|韩国|KR|South Korea|🇹🇼|台湾|TW|Taiwan|🇸🇬|新加坡|SG|Singapore"
           ]
         }
       ],
@@ -153,7 +153,7 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	    "🇹🇼 台湾节点",
+	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true
@@ -163,12 +163,12 @@
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本节点",
-	    "🌏 日韩台新",
+	"🌏 日韩台新",
         "🐢 直连",
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇸🇬 新加坡节点",
-	    "🇹🇼 台湾节点",
+	"🇹🇼 台湾节点",
         "🇺🇸 美国节点"
       ],
       "interrupt_exist_connections": true

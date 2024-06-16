@@ -549,7 +549,7 @@
         "outbound": "🚀 默认出站"
       },
       {
-        "rule_set": ["geosite_wechat", "geoip_cn", "geosite_geolocation-cn"],
+        "rule_set": ["geosite_wechat", "geoip_cn", "geosite_cn"],
         "outbound": "🐢 直连"
       }
     ],
@@ -715,10 +715,10 @@
         "update_interval": "3d"
       },
       {
-        "tag": "geosite_geolocation-cn",
+        "tag": "geosite_cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/geolocation-cn.srs",
+        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/geosite/cn.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       }

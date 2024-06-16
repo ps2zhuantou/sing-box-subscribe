@@ -498,7 +498,7 @@
             "rule_set": ["download-process"]
           },
           {
-            "rule_set": ["geosite_wechat", "geoip_cn", "geosite_geolocation-cn"],
+            "rule_set": ["geoip_cn", "geosite_cn"],
             "invert": true
           }
         ],

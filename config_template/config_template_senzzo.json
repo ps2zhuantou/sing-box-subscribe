@@ -55,7 +55,7 @@
       }
     ],
     "final": "国外DNS",
-    "strategy": "prefer_ipv4",
+    "strategy": "ipv4_only",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": true,
@@ -76,7 +76,7 @@
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": false,
-      "stack": "mixed",
+      "stack": "system",
       "exclude_package": ["com.android.captiveportallogin"],
       "platform": {
         "http_proxy": {
@@ -691,7 +691,7 @@
         "update_interval": "3d"
       },
       {
-        "tag": "geo_geosite_wechat",
+        "tag": "geosite_wechat",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Toperlock/sing-box-geosite/main/rule/WeChat.srs",

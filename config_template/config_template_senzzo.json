@@ -54,7 +54,6 @@
         "rewrite_ttl": 1800
       }
     ],
-    "final": "国外DNS",
     "strategy": "ipv4_only",
     "disable_cache": false,
     "disable_expire": false,

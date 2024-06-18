@@ -47,7 +47,7 @@
         "server": "国外DNS",
         "rewrite_ttl": 1800
       },
-	  {
+      {
         "rule_set": "geosite_geolocation-!cn",
         "server": "国外DNS",
         "rewrite_ttl": 1800

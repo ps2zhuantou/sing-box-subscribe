@@ -55,7 +55,7 @@
     ],
     "final": "国内DNS",
     "strategy": "ipv4_only",
-    "disable_cache": false,
+    "disable_cache": true,
     "disable_expire": false,
     "independent_cache": true,
     "reverse_mapping": false

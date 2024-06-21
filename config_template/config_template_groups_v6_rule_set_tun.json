@@ -544,7 +544,11 @@
           "yacd.haishan.me",
           "d.metacubex.one"
         ],
-        "domain_suffix": [
+       "ip_cidr": [
+          "20.254.1.9/16",
+          "20.253.1.23/16"
+        ], 
+       "domain_suffix": [
           ".duckdns.org"
         ],
         "outbound": "direct"

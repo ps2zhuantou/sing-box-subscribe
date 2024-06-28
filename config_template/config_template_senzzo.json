@@ -7,10 +7,6 @@
       "external_ui_download_detour": "🐢 直连",
       "secret": "",
       "default_mode": "rule"
-    },
-    "cache_file": {
-      "enabled": true,
-      "store_fakeip": false
     }
   },
   "dns": {
@@ -75,9 +71,6 @@
       "auto_route": true,
       "strict_route": false,
       "stack": "system",
-      "exclude_package": [
-        "com.android.captiveportallogin"
-      ],
       "platform": {
         "http_proxy": {
           "enabled": true,
@@ -404,7 +397,6 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "override_android_vpn": true,
     "final": "🚀 默认出站",
     "rules": [
       {

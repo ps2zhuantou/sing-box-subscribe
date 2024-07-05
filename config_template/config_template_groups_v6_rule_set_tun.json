@@ -342,22 +342,6 @@
       "default": "HongKong"
     },
     {
-      "tag":"Global",
-      "type":"selector",
-      "outbounds":[
-        "direct",
-        "JKS",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others",
-        "proxy"
-      ],
-      "default": "HongKong"
-    },
-    {
       "tag":"China",
       "type":"selector",
       "outbounds":[
@@ -662,7 +646,7 @@
       },
       {
         "rule_set": "geosite-geolocation-!cn",
-        "outbound": "Global"
+        "outbound": "proxy"
       },
       {
         "rule_set": "geosite-private",

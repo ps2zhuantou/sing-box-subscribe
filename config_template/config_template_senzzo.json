@@ -276,6 +276,22 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "🪟 Github",
+      "type": "selector",
+      "outbounds": [
+        "🚀 默认出站",
+        "🐢 直连",
+        "📌 单选节点",
+	"🌏 日韩台新",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇹🇼 台湾节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇸 美国节点"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "tag": "🪟 Microsoft",
       "type": "selector",
       "outbounds": [
@@ -498,6 +514,10 @@
         "outbound": "🤖 AI"
       },
       {
+        "rule_set": "geosite_github",
+        "outbound": "🪟 Github"
+      },
+      {
         "rule_set": "geosite_microsoft",
         "outbound": "🪟 Microsoft"
       },
@@ -632,6 +652,14 @@
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/openai.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "geosite_github",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/github.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },

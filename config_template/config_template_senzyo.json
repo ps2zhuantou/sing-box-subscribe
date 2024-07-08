@@ -7,10 +7,6 @@
       "external_ui_download_detour": "🐢 直连",
       "secret": "",
       "default_mode": "rule"
-    },
-    "cache_file": {
-      "enabled": true,
-      "store_fakeip": false
     }
   },
   "dns": {
@@ -48,10 +44,7 @@
         "server": "国际DNS"
       }
     ],
-    "strategy": "prefer_ipv4",
-    "disable_cache": false,
-    "disable_expire": false,
-    "independent_cache": true
+    "strategy": "prefer_ipv4"
   },
   "inbounds": [
     {

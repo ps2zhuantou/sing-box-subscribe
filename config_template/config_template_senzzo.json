@@ -49,7 +49,7 @@
         "rewrite_ttl": 1800
       }
     ],
-    "final": "国外DNS",
+    "final": "国内DNS",
     "strategy": "ipv4_only"
   },
   "ntp": {

@@ -7,6 +7,9 @@
       "external_ui_download_detour": "🐢 直连",
       "secret": "",
       "default_mode": "rule"
+    },
+  "cache_file": {
+    "enabled": true
     }
   },
   "dns": {

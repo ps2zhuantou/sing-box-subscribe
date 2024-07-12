@@ -227,6 +227,23 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "🔎 Youtube",
+      "type": "selector",
+      "outbounds": [
+        "🚀 默认出站",
+        "🐢 直连",
+        "📌 单选节点",
+        "🌏 日韩台新",
+        "🇭🇰 香港节点",
+	"🇭🇰 TUN节点",
+        "🇯🇵 日本节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇸 美国节点"
+      ],
+      "interrupt_exist_connections": true
+    },	  
+    {
       "tag": "🔎 Google",
       "type": "selector",
       "outbounds": [
@@ -493,6 +510,10 @@
         "outbound": "🎮 Game"
       },
       {
+        "rule_set": "geosite_youtube",
+        "outbound": "🔎 Youtube"
+      },
+      {
         "rule_set": ["geoip_google", "geosite_google"],
         "outbound": "🔎 Google"
       },
@@ -603,6 +624,14 @@
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/google.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "geosite_youtube",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/youtube.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },

@@ -549,7 +549,7 @@
         "outbound": "🚀 默认出站"
       },
       {
-        "rule_set": ["geosite_wechat", "geoip_cn", "geosite_cn"],
+        "rule_set": ["geosite_wechat", "geosite_speedtest", "geoip_cn", "geosite_cn"],
         "outbound": "🐢 直连"
       }
     ],
@@ -727,6 +727,14 @@
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Toperlock/sing-box-geosite/main/rule/WeChat.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "15d"
+      },
+      {
+        "tag": "geosite_speedtest",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/speedtest.srs",
         "download_detour": "🐢 直连",
         "update_interval": "15d"
       },

@@ -227,7 +227,7 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "🔎 Youtube",
+      "tag": "▶️ Youtube",
       "type": "selector",
       "outbounds": [
         "🚀 默认出站",
@@ -515,7 +515,7 @@
       },
       {
         "rule_set": "geosite_youtube",
-        "outbound": "🔎 Youtube"
+        "outbound": "▶️ Youtube"
       },
       {
         "rule_set": ["geoip_google", "geosite_google"],

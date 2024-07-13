@@ -148,7 +148,7 @@
       "interrupt_exist_connections": true
     },
    {
-      "tag": "🤖 Perplexity",
+      "tag": "🔎 Perplexity",
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本节点",
@@ -531,7 +531,7 @@
       },
 	  {
         "rule_set": "geosite_perplexity",
-        "outbound": "🤖 Perplexity"
+        "outbound": "🔎 Perplexity"
       },
       {
         "rule_set": "geo_geosite_ai",

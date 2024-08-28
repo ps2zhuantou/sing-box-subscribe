@@ -461,6 +461,10 @@
         "outbound": "🐢 直连"
       },
       {
+        "rule_set": ["geosite_wechat", "geosite_speedtest", "geoip_cn", "geosite_cn"],
+        "outbound": "🐢 直连"
+      },
+      {
         "rule_set": "geosite_category-ads-all",
         "outbound": "📢 广告"
       },
@@ -553,10 +557,6 @@
       {
         "rule_set": "geosite_geolocation-!cn",
         "outbound": "🚀 默认出站"
-      },
-      {
-        "rule_set": ["geosite_wechat", "geosite_speedtest", "geoip_cn", "geosite_cn"],
-        "outbound": "🐢 直连"
       }
     ],
     "rule_set": [

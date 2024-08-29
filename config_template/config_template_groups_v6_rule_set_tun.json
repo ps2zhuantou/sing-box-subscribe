@@ -456,15 +456,6 @@
         "outbound": "📢 广告"
       },
       {
-        "domain_suffix": [
-          "copymanga.site",
-          "mangafuna.xyz",
-          "mangafunb.fun",
-          "senzyo.net"
-        ],
-        "outbound": "🚀 默认出站"
-      },
-      {
 	"ip_cidr": [
           "20.254.1.9/16",
           "20.253.1.23/16"

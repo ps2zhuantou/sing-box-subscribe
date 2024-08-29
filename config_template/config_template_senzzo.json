@@ -461,7 +461,7 @@
         "outbound": "🐢 直连"
       },
       {
-        "rule_set": [ "geosite_wechat", "geosite_speedtest", "geoip_cn", "geosite_cn"],
+        "rule_set": ["geosite_speedtest", "geoip_cn", "geosite_cn"],
         "outbound": "🐢 直连"
       },
       {

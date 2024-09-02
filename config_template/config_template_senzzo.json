@@ -21,7 +21,7 @@
       },
       {
         "tag": "国内DNS",
-        "address": "https://1.12.12.12/dns-quer",
+        "address": "https://1.12.12.12/dns-query",
         "detour": "🐢 直连"
       }
     ],

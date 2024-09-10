@@ -664,7 +664,7 @@
         "update_interval": "5d"
       },
       {
-        "tag": "geosite_ai",
+        "tag": "geosite_openai",
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://github.com/yimmy23/ruleset_geodata/raw/sing-box-ruleset/ai.srs",

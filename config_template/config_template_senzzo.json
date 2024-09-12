@@ -474,7 +474,8 @@
           "20.253.1.23/16"
         ], 
 	"domain":[
-           "dynv6.com",
+           "4.ipw.cn",
+	   "dynv6.com",
            "checkip.dynu.com",
            "api.ipify.org"
         ],

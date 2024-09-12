@@ -119,22 +119,7 @@
       ],
       "interrupt_exist_connections": true
     },
-	{
-      "tag": "🤖 AI",
-      "type": "selector",
-      "outbounds": [
-        "🌏 日韩台新",
-        "🐢 直连",
-        "📌 单选节点",
-        "🇭🇰 香港节点",
-        "🇯🇵 日本节点",
-        "🇸🇬 新加坡节点",
-	"OT 其他节点",
-        "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
-    },
-   {
+    {
       "tag": "🔎 Perplexity",
       "type": "selector",
       "outbounds": [
@@ -143,6 +128,21 @@
         "🐢 直连",
         "📌 单选节点",
         "🇭🇰 香港节点",
+        "🇸🇬 新加坡节点",
+	"OT 其他节点",
+        "🇺🇸 美国节点"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "🤖 AI",
+      "type": "selector",
+      "outbounds": [
+        "🌏 日韩台新",
+        "🐢 直连",
+        "📌 单选节点",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
 	"OT 其他节点",
         "🇺🇸 美国节点"

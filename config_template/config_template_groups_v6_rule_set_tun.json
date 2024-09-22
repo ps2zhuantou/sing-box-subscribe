@@ -518,7 +518,7 @@
         "outbound": "🔎 Perplexity"
       },
       {
-        "rule_set": "geosite_ai",
+        "rule_set": "geosite_openai",
         "outbound": "🤖 AI"
       },
       {

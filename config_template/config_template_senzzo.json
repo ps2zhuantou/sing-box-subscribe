@@ -341,78 +341,58 @@
     },
     {
       "tag": "🇭🇰 香港节点",
-      "type": "urltest",
+      "type": "selector",
       "outbounds": ["{all}"],
       "filter": [
         {
           "action": "include",
           "keywords": ["🇭🇰|香港|HK|Hong Kong"]
         }
-      ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "7m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🇯🇵 日本节点",
-      "type": "urltest",
+      "type": "selector",
       "outbounds": ["{all}"],
       "filter": [
         {
           "action": "include",
           "keywords": ["🇯🇵|日本|JP|Japan"]
         }
-      ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "7m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "OT 其他节点",
-      "type": "urltest",
+      "type": "selector",
       "outbounds": ["{all}"],
       "filter": [
         {
           "action":"exclude",
 	  "keywords":["🇭🇰|HK|hk|香港|香|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|美|剩余|流量|有效|时间|到期|expire|地址|网址|官网|自动|最优|最快|导航|失联|speed|订阅"]
 	}
-      ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "7m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🇸🇬 新加坡节点",
-      "type": "urltest",
+      "type": "selector",
       "outbounds": ["{all}"],
       "filter": [
         {
           "action": "include",
           "keywords": ["🇸🇬|新加坡|SG|Singapore"]
         }
-      ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "7m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🇺🇸 美国节点",
-      "type": "urltest",
+      "type": "selector",
       "outbounds": ["{all}"],
       "filter": [
         {
           "action": "include",
           "keywords": ["🇺🇸|美国|US|USA|United States"]
         }
-      ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "7m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🐢 直连",

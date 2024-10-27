@@ -53,7 +53,7 @@
       }
     ],
     "final": "国内DNS",
-    "strategy": "ipv4_only"
+    "strategy": "prefer_ipv4"
   },
   "ntp": {
     "enabled": true,

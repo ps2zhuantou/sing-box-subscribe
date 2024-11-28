@@ -81,6 +81,7 @@
         "🌏 日韩台新",
         "📌 单选节点",
         "🇭🇰 香港节点",
+	"IPV6",
         "🇯🇵 日本节点",
         "OT 其他节点",
         "🇸🇬 新加坡节点",
@@ -223,6 +224,7 @@
         "📌 单选节点",
         "🌏 日韩台新",
         "🇭🇰 香港节点",
+	"IPV6",
         "🇯🇵 日本节点",
         "OT 其他节点",
         "🇸🇬 新加坡节点",
@@ -239,6 +241,7 @@
         "📌 单选节点",
 	"🌏 日韩台新",
         "🇭🇰 香港节点",
+	"IPV6",
         "🇯🇵 日本节点",
         "OT 其他节点",
         "🇸🇬 新加坡节点",
@@ -335,6 +338,21 @@
         {
           "action": "include",
           "keywords": ["🇭🇰|香港|HK|Hong Kong"]
+        }
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 0,
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "IPV6",
+      "type": "urltest",
+      "outbounds": ["{all}"],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": ["IPV6"]
         }
       ],
       "url": "https://www.gstatic.com/generate_204",

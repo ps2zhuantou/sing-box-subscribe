@@ -598,7 +598,7 @@
         "tag": "downloader",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghp.ci/https://github.com/senzyo/sing-box-rules/raw/master/downloader.srs",
+        "url": "https://gitlab.com/senzyo_sama/as-gist/-/raw/master/Rule/sing-box/downloader.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },

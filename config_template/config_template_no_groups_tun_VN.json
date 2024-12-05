@@ -28,28 +28,23 @@
     "rules": [
       {
         "outbound": "any",
-        "server": "国内DNS",
-        "rewrite_ttl": 1800
+        "server": "国内DNS"
       },
       {
         "rule_set": "geosite_cn",
-        "server": "国内DNS",
-        "rewrite_ttl": 1800
+        "server": "国内DNS"
       },
       {
         "clash_mode": "direct",
-        "server": "国内DNS",
-        "rewrite_ttl": 1800
+        "server": "国内DNS"
       },
       {
         "clash_mode": "global",
-        "server": "国外DNS",
-        "rewrite_ttl": 1800
+        "server": "国外DNS"
       },
       {
         "rule_set": "geosite_geolocation-!cn",
-        "server": "国外DNS",
-        "rewrite_ttl": 1800
+        "server": "国外DNS"
       }
     ],
     "final": "国内DNS",
@@ -68,8 +63,6 @@
       "tag": "tproxy-in",
       "listen": "::",
       "listen_port": 12345,
-      "tcp_fast_open": true,
-      "udp_fragment": true,
       "sniff": true
     }
   ],
@@ -101,9 +94,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "📌 单选节点",
@@ -116,8 +108,7 @@
             "剩余|流量|有效|时间|到期|expire|导航|Expire|traffic|Traffic|地址|网址|官网|自动|最优|最快|失联|speed|订阅"
           ]
         }
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🔎 Perplexity",
@@ -132,8 +123,7 @@
         "🇸🇬 新加坡节点",
 	"OT 其他节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🤖 AI",
@@ -148,8 +138,7 @@
         "🇸🇬 新加坡节点",
 	"OT 其他节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "📢 广告",
@@ -164,24 +153,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "📥 Downloader",
-      "type": "selector",
-      "outbounds": [
-        "🚀 默认出站",
-        "🐢 直连",
-        "📌 单选节点",
-	"🌏 日韩台新",
-        "🇭🇰 香港节点",
-        "🇯🇵 日本节点",
-        "OT 其他节点",
-        "🇸🇬 新加坡节点",
-        "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🍎 Apple",
@@ -196,8 +168,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🎮 Game",
@@ -212,8 +183,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "▶️ Youtube",
@@ -229,8 +199,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },	  
     {
       "tag": "🔎 Google",
@@ -246,8 +215,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🥽 Meta",
@@ -262,8 +230,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "☁️ OneDrive",
@@ -278,8 +245,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "",
@@ -295,8 +261,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🪟 Microsoft",
@@ -311,8 +276,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "✈️ Telegram",
@@ -327,8 +291,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🇭🇰 香港节点",
@@ -341,9 +304,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "IPV6",
@@ -356,9 +318,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "🇯🇵 日本节点",
@@ -371,9 +332,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "🇸🇬 新加坡节点",
@@ -386,9 +346,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "🇺🇸 美国节点",
@@ -401,9 +360,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "OT 其他节点",
@@ -487,20 +445,6 @@
         "outbound": "🐢 直连"
       },
       {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "rule_set": ["downloader"]
-          },
-          {
-            "rule_set": ["geoip_cn", "geosite_cn"],
-            "invert": true
-          }
-        ],
-        "outbound": "📥 Downloader"
-      },
-      {
         "rule_set": "geosite_apple",
         "outbound": "🍎 Apple"
       },
@@ -575,14 +519,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-ads-all.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
-      },
-      {
-        "tag": "downloader",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://gitlab.com/senzyo_sama/as-gist/-/raw/master/Rule/sing-box/downloader.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },

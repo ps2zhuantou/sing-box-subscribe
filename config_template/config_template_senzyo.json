@@ -420,7 +420,7 @@
         "outbound": "🐢 直连"
       },
       {
-        "rule_set": ["geosite_speedtest", "geoip_cn", "geosite_cn"],
+        "rule_set": ["geosite_speedtest", "geosite_wechat", "geoip_cn", "geosite_cn"],
         "outbound": "🐢 直连"
       },
       {
@@ -641,7 +641,7 @@
         "tag": "geosite_wechat",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghp.ci/https://github.com/Toperlock/sing-box-geosite/raw/main/rule/WeChat.srs",
+        "url": "https://ghp.ci/https://github.com/Toperlock/sing-box-geosite/raw/refs/heads/main/rule/WeChat.srs",
         "download_detour": "🐢 直连"
       },
       {

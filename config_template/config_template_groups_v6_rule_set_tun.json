@@ -649,18 +649,10 @@
         "update_interval": "5d"
       },
       {
-        "tag": "geosite_ai",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://ghp.ci/https://github.com/yimmy23/ruleset_geodata/raw/sing-box-ruleset/ai.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "5d"
-      },
-      {
         "tag": "geosite_openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghp.ci/https://github.com/Toperlock/sing-box-geosite/raw/main/rule/OpenAI.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",
         "download_detour": "🐢 直连",
         "update_interval": "5d"
       },

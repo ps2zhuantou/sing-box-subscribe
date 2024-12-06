@@ -307,6 +307,21 @@
       ]
     },
     {
+      "tag": "🎥 Netflix",
+      "type": "selector",
+      "outbounds": [
+        "🚀 默认出站",
+        "🐢 直连",
+        "📌 单选节点",
+	"🌏 日韩台新",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇸 美国节点"
+      ]
+    },
+    {
       "tag": "🇭🇰 香港节点",
       "type": "urltest",
       "outbounds": ["{all}"],
@@ -471,7 +486,7 @@
         "rule_set": "geosite_onedrive",
         "outbound": "☁️ OneDrive"
       },
-	  {
+      {
         "rule_set": "geosite_perplexity",
         "outbound": "🔎 Perplexity"
       },
@@ -490,6 +505,10 @@
       {
         "rule_set": ["geoip_telegram", "geosite_telegram"],
         "outbound": "✈️ Telegram"
+      },
+      {
+        "rule_set": ["geosite_netflix", "geoip_netflix"],
+        "outbound": "🎥 Netflix"
       },
       {
         "rule_set": "geosite_geolocation-!cn",
@@ -589,17 +608,10 @@
         "download_detour": "🐢 直连"
       },
       {
-        "tag": "geosite_ai",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://ghp.ci/https://github.com/yimmy23/ruleset_geodata/raw/sing-box-ruleset/ai.srs",
-        "download_detour": "🐢 直连"
-      },
-      {
         "tag": "geosite_openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghp.ci/https://github.com/Toperlock/sing-box-geosite/raw/main/rule/OpenAI.srs",
+        "url": "https://ghp.ci/https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",
         "download_detour": "🐢 直连"
       },    
       {
@@ -628,6 +640,20 @@
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/telegram.srs",
+        "download_detour": "🐢 直连"
+      },
+      {
+        "tag": "geosite_netflix",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
+        "download_detour": "🐢 直连"
+      },
+      {
+        "tag": "geoip_netflix",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
         "download_detour": "🐢 直连"
       },
       {

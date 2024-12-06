@@ -603,7 +603,7 @@
         "update_interval": "5d"
       },
       {
-        "tag": "geosite_ai",
+        "tag": "geosite_openai",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",

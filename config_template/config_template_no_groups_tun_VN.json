@@ -662,7 +662,7 @@
         "tag": "geosite_wechat",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/Toperlock/sing-box-geosite/raw/refs/heads/main/rule/WeChat.srs",
+        "url": "https://ghp.ci/https://github.com/Toperlock/sing-box-geosite/raw/refs/heads/main/rule/WeChat.srs",
         "download_detour": "🐢 直连",
         "update_interval": "15d"
       },

@@ -84,7 +84,26 @@
       { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out" },
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
-      { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
+      {
+                "ip_cidr": [
+                    "20.254.1.9/16",
+                    "20.253.1.23/16"
+                ],
+                "domain": [
+                    "clash.razord.top",
+                    "yacd.metacubex.one",
+                    "yacd.haishan.me",
+                    "d.metacubex.one",
+                    "4.ipw.cn",
+                    "dynv6.com",
+                    "checkip.dynu.com",
+                    "api.ipify.org"
+                ],
+                "domain_suffix": [
+                    ".duckdns.org"
+                ],
+                "outbound": "🎯 全球直连"
+      },
       { "rule_set": ["geosite-private", "geoip-private"], "outbound": "🎯 全球直连" },
       { "rule_set": "geosite-chat", "outbound": "🤖 OpenAI" },
       { "rule_set": "geosite-github", "outbound": "👨‍💻 Github" },

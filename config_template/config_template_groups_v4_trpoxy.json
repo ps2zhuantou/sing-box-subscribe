@@ -28,28 +28,23 @@
     "rules": [
       {
         "outbound": "any",
-        "server": "国内DNS",
-        "rewrite_ttl": 1800
+        "server": "国内DNS"
       },
       {
         "rule_set": "geosite_cn",
-        "server": "国内DNS",
-        "rewrite_ttl": 1800
+        "server": "国内DNS"
       },
       {
         "clash_mode": "direct",
-        "server": "国内DNS",
-        "rewrite_ttl": 1800
+        "server": "国内DNS"
       },
       {
         "clash_mode": "global",
-        "server": "国外DNS",
-        "rewrite_ttl": 1800
+        "server": "国外DNS"
       },
       {
         "rule_set": "geosite_geolocation-!cn",
-        "server": "国外DNS",
-        "rewrite_ttl": 1800
+        "server": "国外DNS"
       }
     ],
     "final": "国内DNS",
@@ -68,8 +63,6 @@
       "tag": "tproxy-in",
       "listen": "::",
       "listen_port": 12345,
-      "tcp_fast_open": true,
-      "udp_fragment": true,
       "sniff": true
     }
   ],
@@ -100,9 +93,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "📌 单选节点",
@@ -115,8 +107,7 @@
             "剩余|流量|有效|时间|到期|expire|导航|Expire|traffic|Traffic|地址|网址|官网|自动|最优|最快|失联|speed|订阅"
           ]
         }
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🔎 Perplexity",
@@ -131,8 +122,7 @@
         "🇸🇬 新加坡节点",
 	"OT 其他节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🤖 AI",
@@ -147,8 +137,7 @@
         "🇸🇬 新加坡节点",
 	"OT 其他节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "📢 广告",
@@ -163,24 +152,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "📥 Downloader",
-      "type": "selector",
-      "outbounds": [
-        "🚀 默认出站",
-        "🐢 直连",
-        "📌 单选节点",
-	"🌏 日韩台新",
-        "🇭🇰 香港节点",
-        "🇯🇵 日本节点",
-        "OT 其他节点",
-        "🇸🇬 新加坡节点",
-        "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🍎 Apple",
@@ -195,8 +167,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🎮 Game",
@@ -211,8 +182,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "▶️ Youtube",
@@ -227,8 +197,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },	  
     {
       "tag": "🔎 Google",
@@ -243,8 +212,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🥽 Meta",
@@ -259,8 +227,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "☁️ OneDrive",
@@ -275,11 +242,9 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
-      "tag": "",
       "tag": "😼 Github",
       "type": "selector",
       "outbounds": [
@@ -292,8 +257,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🪟 Microsoft",
@@ -308,9 +272,23 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
+    {
+      "tag": "🎥 Netflix",
+      "type": "selector",
+      "outbounds": [
+        "🚀 默认出站",
+        "🐢 直连",
+        "📌 单选节点",
+	"🌏 日韩台新",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇸 美国节点"
+      ]
+    },  
     {
       "tag": "✈️ Telegram",
       "type": "selector",
@@ -324,8 +302,7 @@
         "OT 其他节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🇭🇰 香港节点",
@@ -338,9 +315,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "🇯🇵 日本节点",
@@ -353,9 +329,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "🇸🇬 新加坡节点",
@@ -368,9 +343,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "🇺🇸 美国节点",
@@ -383,9 +357,8 @@
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
-      "interval": "5m",
-      "tolerance": 0,
-      "interrupt_exist_connections": true
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag": "OT 其他节点",
@@ -469,20 +442,6 @@
         "outbound": "🐢 直连"
       },
       {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "rule_set": ["downloader"]
-          },
-          {
-            "rule_set": ["geoip_cn", "geosite_cn"],
-            "invert": true
-          }
-        ],
-        "outbound": "📥 Downloader"
-      },
-      {
         "rule_set": "geosite_apple",
         "outbound": "🍎 Apple"
       },
@@ -501,6 +460,10 @@
       {
         "rule_set": ["geoip_google", "geosite_google"],
         "outbound": "🔎 Google"
+      },
+      {
+        "rule_set": ["geosite_netflix", "geoip_netflix"],
+        "outbound": "🎥 Netflix"
       },
       {
         "rule_set": ["geoip_facebook", "geosite_meta"],
@@ -541,192 +504,175 @@
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geoip/private.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_private",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/private.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_category-ads-all",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-ads-all.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
-      },
-      {
-        "tag": "downloader",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://gitlab.com/senzyo_sama/as-gist/-/raw/master/Rule/sing-box/downloader.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_apple",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/apple.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_category-games@cn",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-games@cn.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_category-games",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-games.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geoip_google",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geoip/google.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_google",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/google.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_youtube",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo-lite/geosite/youtube.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geoip_facebook",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geoip/facebook.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_meta",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/meta.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_onedrive",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/onedrive.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_perplexity",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/perplexity.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "5d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_openai",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "5d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_github",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/github.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_microsoft",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/microsoft.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
+      },
+      {
+        "tag": "geosite_netflix",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
+        "download_detour": "🐢 直连"
+      },
+      {
+        "tag": "geoip_netflix",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geoip_telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geoip/telegram.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/telegram.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_geolocation-!cn",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/geolocation-!cn.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_wechat",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghp.ci/https://github.com/Toperlock/sing-box-geosite/raw/main/rule/WeChat.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "15d"
+        "url": "https://ghp.ci/https://github.com/Toperlock/sing-box-geosite/raw/refs/heads/main/rule/WeChat.srs",
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_speedtest",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/speedtest.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "15d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geoip_cn",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geoip/cn.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       },
       {
         "tag": "geosite_cn",
         "type": "remote",
         "format": "binary",
         "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/cn.srs",
-        "download_detour": "🐢 直连",
-        "update_interval": "3d"
+        "download_detour": "🐢 直连"
       }
     ]
   }

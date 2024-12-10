@@ -67,6 +67,7 @@
 
   "outbounds": [
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🔯 香港自动", "🔯 日本自动", "🔯 新加坡自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "SG 新加坡节点", "🇺🇲 美国节点", "🐸 手动切换", "♻️ 自动选择", "🎯 全球直连"] },
+    { "tag": "🔎 Perplexity", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🔯 香港自动", "🔯 日本自动", "🔯 新加坡自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "SG 新加坡节点", "🇺🇲 美国节点", "🐸 手动切换"] },
     { "tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🔯 香港自动", "🔯 日本自动", "🔯 新加坡自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "SG 新加坡节点", "🇺🇲 美国节点", "🐸 手动切换"] },
     { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🔯 香港自动", "🔯 日本自动", "🔯 新加坡自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "SG 新加坡节点", "🇺🇲 美国节点", "🐸 手动切换"] },
     { "tag": "🍀 Google", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🔯 香港自动", "🔯 日本自动", "🔯 新加坡自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "SG 新加坡节点", "🇺🇲 美国节点", "🐸 手动切换"] },
@@ -101,6 +102,7 @@
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "ip_cidr": ["20.254.1.9/16", "20.253.1.23/16"], "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one", "4.ipw.cn", "dynv6.com", "checkip.dynu.com", "api.ipify.org"], "domain_suffix": [".duckdns.org"], "outbound": "🎯 全球直连" },
       { "rule_set": ["geosite-private", "geoip-private"], "outbound": "🎯 全球直连" },
+      { "rule_set": "geosite-perplexity", "outbound": "🔎 Perplexity" },
       { "rule_set": "geosite-chat", "outbound": "🤖 OpenAI" },
       { "rule_set": "geosite-github", "outbound": "👨‍💻 Github" },
       { "rule_set": "geosite-youtube", "outbound": "📹 YouTube" },
@@ -116,6 +118,7 @@
     ],
     
     "rule_set": [
+      { "tag": "geosite-perplexity", "type": "remote", "format": "binary", "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/perplexity.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-chat", "type": "remote", "format": "binary", "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-google", "type": "remote", "format": "binary", "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs", "download_detour": "🎯 全球直连" },

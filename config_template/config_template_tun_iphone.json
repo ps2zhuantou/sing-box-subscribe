@@ -1,10 +1,3 @@
-{
-  "log": {
-    "disabled": false,
-    "level": "info",
-    "timestamp": true
-  },
-  
   "experimental": {
   "cache_file": {
     "enabled": true

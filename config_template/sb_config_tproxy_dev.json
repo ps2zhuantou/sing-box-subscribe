@@ -526,7 +526,6 @@
             },
             {
                 "rule_set": [
-                    "geosite-wechat",
                     "geosite-speedtest",
                     "geoip-cn",
                     "geosite-cn"

@@ -444,10 +444,6 @@
         "outbound": "🐢 直连"
       },
       {
-        "rule_set": "geosite_category-games",
-        "outbound": "🎮 Game"
-      },
-      {
         "rule_set": "geosite_youtube",
         "outbound": "▶️ Youtube"
       },

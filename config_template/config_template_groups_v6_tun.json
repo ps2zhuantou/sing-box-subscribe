@@ -611,7 +611,7 @@
         "tag": "geosite_openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghproxy.net/https://github.com/yimmy23/ruleset_geodata/raw/sing-box-ruleset/ai.srs",
+        "url": "https://ghproxy.net/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",
         "download_detour": "🐢 直连"
       },    
       {

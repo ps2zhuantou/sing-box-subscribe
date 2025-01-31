@@ -304,7 +304,7 @@
         },
         {
             "tag": "🇯🇵 日本节点",
-            "type": "urltest",
+            "type": "selector",
             "outbounds": [
                 "{all}"
             ],
@@ -315,10 +315,7 @@
                         "🇯🇵|JP|jp|日本|日|Japan"
                     ]
                 }
-            ],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "10m",
-            "tolerance": 50
+            ]
         },
         {
             "tag": "🇺🇲 美国节点",
@@ -332,18 +329,12 @@
                     "keywords": [
                         "🇺🇸|US|us|美国|美|United States"
                     ]
-                },
-                {
-                    "action": "exclude",
-                    "keywords": [
-                        "香港|港|HK|hk|HongKong"
-                    ]
                 }
             ]
         },
         {
             "tag": "🇸🇬 新加坡节点",
-            "type": "urltest",
+            "type": "selector",
             "outbounds": [
                 "{all}"
             ],
@@ -354,10 +345,7 @@
                         "🇸🇬|新加坡|SG|Singapore"
                     ]
                 }
-            ],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "10m",
-            "tolerance": 50
+            ]
         },
         {
             "tag": "🔯 日韩台新",

@@ -38,15 +38,18 @@
         "rules": [
             {
                 "outbound": "any",
+		"action": "route",
                 "server": "dns_direct",
                 "disable_cache": true
             },
             {
                 "clash_mode": "Direct",
+		"action": "route",
                 "server": "dns_direct"
             },
             {
                 "clash_mode": "Global",
+		"action": "route",
                 "server": "dns_proxy"
             },
             {
@@ -56,6 +59,7 @@
             },
             {
                 "rule_set": "geosite-geolocation-!cn",
+		"action": "route",
                 "server": "dns_proxy"
             }
         ],
@@ -65,13 +69,14 @@
     "inbounds": [
         {
       "type": "tun",
+      "tag": "tun-in",
       "address": [
         "172.18.0.1/30",
         "fdfe:dcba:9876::1/126"
       ],
       "mtu": 9000,
       "auto_route": true,
-      "sniff": true,
+      "strict_route": true,
       "stack": "system",
       "platform": {
         "http_proxy": {
@@ -83,6 +88,7 @@
     },
     {
       "type": "mixed",
+      "tag": "mixed-in",
       "listen": "127.0.0.1",
       "listen_port": 2080,
       "sniff": true,
@@ -433,7 +439,7 @@
         "final": "🐠 漏网之鱼",
         "rules": [
       {
-        "inbound": ["tproxy-in"],
+        "inbound": ["mixed-in", "tun-in"],
         "action": "sniff"
       },
       {

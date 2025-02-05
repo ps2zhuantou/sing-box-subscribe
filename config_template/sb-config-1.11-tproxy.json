@@ -456,7 +456,7 @@
         ],
         "action": "reject"
       },
-	  {
+      {
         "ip_is_private": true,
         "action": "route",
         "outbound": "🎯 全球直连"
@@ -487,20 +487,28 @@
         "outbound": "🐢 直连"
       },
       {
-	"ip_cidr": [
+        "ip_cidr": [
           "20.254.1.9/16",
           "20.253.1.23/16"
-        ], 
-	"domain":[
-           "4.ipw.cn",
-	   "dynv6.com",
-           "checkip.dynu.com",
-           "api.ipify.org"
+        ],
+        "action": "route",
+        "outbound": "🐢 直连"
+      },
+      {
+        "domain": [
+          "clash.razord.top",
+          "yacd.metacubex.one",
+          "yacd.haishan.me",
+          "d.metacubex.one",
+          "4.ipw.cn",
+          "dynv6.com",
+          "checkip.dynu.com",
+          "api.ipify.org"
         ],
         "domain_suffix": [
           ".duckdns.org"
         ],
-		"action": "route",
+        "action": "route",
         "outbound": "🐢 直连"
       },
       {

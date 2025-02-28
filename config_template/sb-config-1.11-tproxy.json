@@ -8,8 +8,8 @@
       "secret": "",
       "default_mode": "rule"
     },
-  "cache_file": {
-    "enabled": true
+    "cache_file": {
+      "enabled": true
     }
   },
   "dns": {
@@ -58,7 +58,7 @@
     "detour": "🐢 直连"
   },
   "inbounds": [
-     {
+    {
       "type": "tproxy",
       "tag": "tproxy-in",
       "listen": "::",
@@ -74,22 +74,24 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	"OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
       "tag": "🌏 日韩台新",
       "type": "urltest",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
           "keywords": [
-          "🇯🇵|日本|JP|Japan|🇰🇷|韩国|KR|South Korea|🇹🇼|台湾|TW|Taiwan|🇸🇬|新加坡|SG|Singapore"
+            "🇯🇵|日本|JP|Japan|🇰🇷|韩国|KR|South Korea|🇹🇼|台湾|TW|Taiwan|🇸🇬|新加坡|SG|Singapore"
           ]
         }
       ],
@@ -100,7 +102,9 @@
     {
       "tag": "📌 单选节点",
       "type": "selector",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "exclude",
@@ -115,14 +119,14 @@
       "type": "selector",
       "outbounds": [
         "🚀 默认出站",
-	    "🌏 日韩台新",
+        "🌏 日韩台新",
         "🐢 直连",
         "📌 单选节点",
         "🇭🇰 香港节点",
-	    "🇯🇵 日本手动",
-	    "🇸🇬 新加坡手动",
+        "🇯🇵 日本手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
@@ -130,14 +134,14 @@
       "type": "selector",
       "outbounds": [
         "🚀 默认出站",
-	    "🌏 日韩台新",
+        "🌏 日韩台新",
         "🐢 直连",
         "📌 单选节点",
         "🇭🇰 香港节点",
-	    "🇯🇵 日本手动",
-	    "🇸🇬 新加坡手动",
+        "🇯🇵 日本手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
@@ -150,11 +154,11 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
@@ -167,11 +171,11 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
@@ -184,13 +188,13 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
-    },	  
+    },
     {
       "tag": "🔎 Google",
       "type": "selector",
@@ -201,11 +205,11 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
@@ -218,11 +222,11 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
@@ -235,11 +239,11 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
@@ -252,11 +256,11 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
@@ -269,11 +273,11 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
@@ -286,13 +290,13 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
-    },  
+    },
     {
       "tag": "✈️ Telegram",
       "type": "selector",
@@ -303,21 +307,25 @@
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
-	    "🇯🇵 日本手动",
+        "🇯🇵 日本手动",
         "🇸🇬 新加坡节点",
-	    "🇸🇬 新加坡手动",
+        "🇸🇬 新加坡手动",
         "🇺🇸 美国节点",
-	    "OT 其他节点"
+        "OT 其他节点"
       ]
     },
     {
       "tag": "🇭🇰 香港节点",
       "type": "urltest",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇭🇰|香港|HK|Hong Kong"]
+          "keywords": [
+            "🇭🇰|香港|HK|Hong Kong"
+          ]
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -327,11 +335,15 @@
     {
       "tag": "🇯🇵 日本节点",
       "type": "urltest",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇯🇵|日本|JP|Japan"]
+          "keywords": [
+            "🇯🇵|日本|JP|Japan"
+          ]
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -341,22 +353,30 @@
     {
       "tag": "🇯🇵 日本手动",
       "type": "selector",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇯🇵|日本|JP|Japan"]
+          "keywords": [
+            "🇯🇵|日本|JP|Japan"
+          ]
         }
       ]
     },
     {
       "tag": "🇸🇬 新加坡节点",
       "type": "urltest",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇸🇬|新加坡|SG|Singapore"]
+          "keywords": [
+            "🇸🇬|新加坡|SG|Singapore"
+          ]
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -366,34 +386,46 @@
     {
       "tag": "🇸🇬 新加坡手动",
       "type": "selector",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇸🇬|新加坡|SG|Singapore"]
+          "keywords": [
+            "🇸🇬|新加坡|SG|Singapore"
+          ]
         }
       ]
     },
     {
       "tag": "🇺🇸 美国节点",
       "type": "selector",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇺🇸|美国|US|USA|United States"]
+          "keywords": [
+            "🇺🇸|美国|US|USA|United States"
+          ]
         }
       ]
     },
     {
       "tag": "OT 其他节点",
       "type": "selector",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
-          "action":"exclude",
-	  "keywords":["🇭🇰|HK|hk|香港|香|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|美|剩余|流量|有效|时间|到期|expire|地址|网址|官网|自动|最优|最快|导航|失联|speed|订阅"]
-	}
+          "action": "exclude",
+          "keywords": [
+            "🇭🇰|HK|hk|香港|香|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|美|剩余|流量|有效|时间|到期|expire|地址|网址|官网|自动|最优|最快|导航|失联|speed|订阅"
+          ]
+        }
       ]
     },
     {
@@ -429,7 +461,11 @@
         "outbound": "🐢 直连"
       },
       {
-        "rule_set": ["geosite_speedtest", "geoip_cn", "geosite_cn"],
+        "rule_set": [
+          "geosite_speedtest",
+          "geoip_cn",
+          "geosite_cn"
+        ],
         "outbound": "🐢 直连"
       },
       {
@@ -472,22 +508,31 @@
         "outbound": "▶️ Youtube"
       },
       {
-        "rule_set": ["geoip_google", "geosite_google"],
+        "rule_set": [
+          "geoip_google",
+          "geosite_google"
+        ],
         "outbound": "🔎 Google"
       },
       {
-        "rule_set": ["geosite_netflix", "geoip_netflix"],
+        "rule_set": [
+          "geosite_netflix",
+          "geoip_netflix"
+        ],
         "outbound": "🎥 Netflix"
       },
       {
-        "rule_set": ["geoip_facebook", "geosite_meta"],
+        "rule_set": [
+          "geoip_facebook",
+          "geosite_meta"
+        ],
         "outbound": "🥽 Meta"
       },
       {
         "rule_set": "geosite_onedrive",
         "outbound": "☁️ OneDrive"
       },
-	  {
+      {
         "rule_set": "geosite_perplexity",
         "outbound": "🔎 Perplexity"
       },
@@ -504,7 +549,10 @@
         "outbound": "🪟 Microsoft"
       },
       {
-        "rule_set": ["geoip_telegram", "geosite_telegram"],
+        "rule_set": [
+          "geoip_telegram",
+          "geosite_telegram"
+        ],
         "outbound": "✈️ Telegram"
       },
       {

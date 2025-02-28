@@ -1,393 +1,393 @@
 {
-    "log": {
-        "disabled": false,
-        "level": "info",
-        "timestamp": true
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "timestamp": true
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "0.0.0.0:9090",
+      "external_ui": "ui",
+      "secret": "",
+      "external_ui_download_url": "https://gh-proxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+      "external_ui_download_detour": "🎯 全球直连",
+      "default_mode": "rule"
     },
-    "experimental": {
-        "clash_api": {
-            "external_controller": "0.0.0.0:9090",
-            "external_ui": "ui",
-            "secret": "",
-            "external_ui_download_url": "https://gh-proxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
-            "external_ui_download_detour": "🎯 全球直连",
-            "default_mode": "rule"
-        },
-        "cache_file": {
-            "enabled": true,
-            "store_fakeip": false
-        }
-    },
-    "dns": {
-        "servers": [
-            {
-                "tag": "dns_direct",
-                "address": "https://223.5.5.5/dns-query",
-                "detour": "🎯 全球直连"
-            },
-            {
-                "tag": "dns_proxy",
-                "address": "https://8.8.8.8/dns-query",
-                "detour": "🚀 节点选择"
-            }
-        ],
-        "rules": [
-            {
-                "outbound": "any",
-                "server": "dns_direct",
-                "disable_cache": true
-            },
-            {
-                "clash_mode": "Direct",
-                "server": "dns_direct"
-            },
-            {
-                "clash_mode": "Global",
-                "server": "dns_proxy"
-            },
-            {
-                "rule_set": "geosite-cn",
-                "server": "dns_direct"
-            },
-            {
-                "rule_set": "geosite-geolocation-!cn",
-                "server": "dns_proxy"
-            }
-        ],
-        "final": "dns_proxy",
-        "strategy": "prefer_ipv4"
-    },
-    "inbounds": [
-        {
-            "type": "tproxy",
-            "tag": "tproxy-in",
-            "listen": "0.0.0.0",
-            "listen_port": 12345
-        }
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": false
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_direct",
+        "address": "https://223.5.5.5/dns-query",
+        "detour": "🎯 全球直连"
+      },
+      {
+        "tag": "dns_proxy",
+        "address": "https://8.8.8.8/dns-query",
+        "detour": "🚀 节点选择"
+      }
     ],
-    "outbounds": [
-        {
-            "tag": "🚀 节点选择",
-            "type": "selector",
-            "outbounds": [
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "🇯🇵 日本节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇺🇲 美国节点",
-                "🐸 手动切换",
-                "♻️ 自动选择",
-                "🎯 全球直连"
-            ]
-        },
-        {
-            "tag": "🔎 Perplexity",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "♻️ 自动选择",
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点",
-                "🐸 手动切换"
-            ]
-        },
-        {
-            "tag": "📹 YouTube",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "♻️ 自动选择",
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点",
-                "🐸 手动切换"
-            ]
-        },
-        {
-            "tag": "🤖 OpenAI",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "♻️ 自动选择",
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点",
-                "🐸 手动切换"
-            ]
-        },
-        {
-            "tag": "🍀 Google",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "♻️ 自动选择",
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点",
-                "🐸 手动切换"
-            ]
-        },
-        {
-            "tag": "👨\u200d💻 Github",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "♻️ 自动选择",
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点",
-                "🐸 手动切换"
-            ]
-        },
-        {
-            "tag": "🪟 Microsoft",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "♻️ 自动选择",
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点",
-                "🎯 全球直连"
-            ]
-        },
-        {
-            "tag": "🐬 OneDrive",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "♻️ 自动选择",
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点",
-                "🐸 手动切换"
-            ]
-        },
-        {
-            "tag": "🎵 TikTok",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "♻️ 自动选择",
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点",
-                "🐸 手动切换"
-            ]
-        },
-        {
-            "tag": "🎥 Netflix",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "♻️ 自动选择",
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点",
-                "🐸 手动切换"
-            ]
-        },
-        {
-            "tag": "📲 Telegram",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "♻️ 自动选择",
-                "🔯 日韩台新",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点",
-                "🐸 手动切换"
-            ]
-        },
-        {
-            "tag": "🍏 Apple",
-            "type": "selector",
-            "outbounds": [
-                "🎯 全球直连",
-                "🇭🇰 香港节点",
-                "OT 其他节点",
-                "🇸🇬 新加坡节点",
-                "🇯🇵 日本节点",
-                "🇺🇲 美国节点"
-            ]
-        },
-        {
-            "tag": "🐠 漏网之鱼",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "🎯 全球直连"
-            ]
-        },
-        {
-            "tag": "🐸 手动切换",
-            "type": "selector",
-            "outbounds": [
-                "{all}"
-            ]
-        },
-        {
-            "tag": "🇭🇰 香港节点",
-            "type": "urltest",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇭🇰|HK|hk|香港|港|HongKong"
-                    ]
-                }
-            ],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "10m",
-            "tolerance": 50
-        },
-        {
-            "tag": "🇯🇵 日本节点",
-            "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇯🇵|JP|jp|日本|日|Japan"
-                    ]
-                }
-            ]
-        },
-        {
-            "tag": "🇺🇲 美国节点",
-            "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇺🇸|US|us|美国|美|United States"
-                    ]
-                }
-            ]
-        },
-        {
-            "tag": "🇸🇬 新加坡节点",
-            "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇸🇬|新加坡|SG|Singapore"
-                    ]
-                }
-            ]
-        },
-        {
-            "tag": "🔯 日韩台新",
-            "type": "urltest",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇯🇵|日本|JP|Japan|🇰🇷|韩国|KR|South Korea|🇹🇼|台湾|TW|Taiwan|🇸🇬|新加坡|SG|Singapore"
-                    ]
-                }
-            ],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "10m",
-            "tolerance": 50
-        },
-        {
-            "tag": "OT 其他节点",
-            "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "exclude",
-                    "keywords": [
-                        "🇭🇰|HK|hk|香港|香|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|美|剩余|流量|有效|时间|到期|expire|地址|网址|官网|自动|最优|最快|导航|失联|speed|订阅"
-                    ]
-                }
-            ]
-        },
-        {
-            "tag": "♻️ 自动选择",
-            "type": "urltest",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "exclude",
-                    "keywords": [
-                        "网站|地址|剩余|过期|时间|有效"
-                    ]
-                }
-            ],
-            "url": "http://www.gstatic.com/generate_204",
-            "interval": "10m",
-            "tolerance": 50
-        },
-        {
-            "tag": "GLOBAL",
-            "type": "selector",
-            "outbounds": [
-                "{all}"
-            ]
-        },
-        {
-            "tag": "🎯 全球直连",
-            "type": "direct"
-        }
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "dns_direct",
+        "disable_cache": true
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "rule_set": "geosite-cn",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": "geosite-geolocation-!cn",
+        "server": "dns_proxy"
+      }
     ],
-    "route": {
-        "auto_detect_interface": true,
-        "final": "🐠 漏网之鱼",
-        "rules": [
+    "final": "dns_proxy",
+    "strategy": "prefer_ipv4"
+  },
+  "inbounds": [
+    {
+      "type": "tproxy",
+      "tag": "tproxy-in",
+      "listen": "0.0.0.0",
+      "listen_port": 12345
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "🚀 节点选择",
+      "type": "selector",
+      "outbounds": [
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换",
+        "♻️ 自动选择",
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "tag": "🔎 Perplexity",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
+      ]
+    },
+    {
+      "tag": "📹 YouTube",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
+      ]
+    },
+    {
+      "tag": "🤖 OpenAI",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
+      ]
+    },
+    {
+      "tag": "🍀 Google",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
+      ]
+    },
+    {
+      "tag": "👨\u200d💻 Github",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
+      ]
+    },
+    {
+      "tag": "🪟 Microsoft",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "tag": "🐬 OneDrive",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
+      ]
+    },
+    {
+      "tag": "🎵 TikTok",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
+      ]
+    },
+    {
+      "tag": "🎥 Netflix",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
+      ]
+    },
+    {
+      "tag": "📲 Telegram",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 日韩台新",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
+      ]
+    },
+    {
+      "tag": "🍏 Apple",
+      "type": "selector",
+      "outbounds": [
+        "🎯 全球直连",
+        "🇭🇰 香港节点",
+        "OT 其他节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点"
+      ]
+    },
+    {
+      "tag": "🐠 漏网之鱼",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "tag": "🐸 手动切换",
+      "type": "selector",
+      "outbounds": [
+        "{all}"
+      ]
+    },
+    {
+      "tag": "🇭🇰 香港节点",
+      "type": "urltest",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "🇭🇰|HK|hk|香港|港|HongKong"
+          ]
+        }
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
+    },
+    {
+      "tag": "🇯🇵 日本节点",
+      "type": "selector",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "🇯🇵|JP|jp|日本|日|Japan"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "🇺🇲 美国节点",
+      "type": "selector",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "🇺🇸|US|us|美国|美|United States"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "🇸🇬 新加坡节点",
+      "type": "selector",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "🇸🇬|新加坡|SG|Singapore"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "🔯 日韩台新",
+      "type": "urltest",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "🇯🇵|日本|JP|Japan|🇰🇷|韩国|KR|South Korea|🇹🇼|台湾|TW|Taiwan|🇸🇬|新加坡|SG|Singapore"
+          ]
+        }
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
+    },
+    {
+      "tag": "OT 其他节点",
+      "type": "selector",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "exclude",
+          "keywords": [
+            "🇭🇰|HK|hk|香港|香|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|美|剩余|流量|有效|时间|到期|expire|地址|网址|官网|自动|最优|最快|导航|失联|speed|订阅"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "♻️ 自动选择",
+      "type": "urltest",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "exclude",
+          "keywords": [
+            "网站|地址|剩余|过期|时间|有效"
+          ]
+        }
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
+    },
+    {
+      "tag": "GLOBAL",
+      "type": "selector",
+      "outbounds": [
+        "{all}"
+      ]
+    },
+    {
+      "tag": "🎯 全球直连",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "final": "🐠 漏网之鱼",
+    "rules": [
       {
         "action": "sniff"
       },
@@ -470,26 +470,26 @@
           "geosite-netflix",
           "geoip-netflix"
         ],
-	"outbound": "🎥 Netflix"
+        "outbound": "🎥 Netflix"
       },
       {
         "rule_set": [
           "geosite-apple",
           "geoip-apple"
         ],
-	"outbound": "🍏 Apple"
+        "outbound": "🍏 Apple"
       },
       {
         "rule_set": "geosite-onedrive",
-	"outbound": "🐬 OneDrive"
+        "outbound": "🐬 OneDrive"
       },
       {
         "rule_set": "geosite-microsoft",
-	"outbound": "🪟 Microsoft"
+        "outbound": "🪟 Microsoft"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
-	"outbound": "🚀 节点选择"
+        "outbound": "🚀 节点选择"
       },
       {
         "rule_set": [
@@ -497,10 +497,10 @@
           "geoip-cn",
           "geosite-cn"
         ],
-	"outbound": "🎯 全球直连"
+        "outbound": "🎯 全球直连"
       }
-        ],
-        "rule_set": [
+    ],
+    "rule_set": [
       {
         "tag": "geosite-chat",
         "type": "remote",

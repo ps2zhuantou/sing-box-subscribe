@@ -21,7 +21,7 @@
       {
         "outbound": "any",
         "server": "国内DNS",
-	"disable_cache": true
+        "disable_cache": true
       },
       {
         "rule_set": "geosite_cn",
@@ -51,7 +51,7 @@
     "detour": "🐢 直连"
   },
   "inbounds": [
-     {
+    {
       "type": "tun",
       "tag": "tun-in",
       "address": [
@@ -94,12 +94,14 @@
     {
       "tag": "🌏 日韩台新",
       "type": "urltest",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
           "keywords": [
-          "🇯🇵|日本|JP|Japan|🇰🇷|韩国|KR|South Korea|🇹🇼|台湾|TW|Taiwan|🇸🇬|新加坡|SG|Singapore"
+            "🇯🇵|日本|JP|Japan|🇰🇷|韩国|KR|South Korea|🇹🇼|台湾|TW|Taiwan|🇸🇬|新加坡|SG|Singapore"
           ]
         }
       ],
@@ -110,7 +112,9 @@
     {
       "tag": "📌 单选节点",
       "type": "selector",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "exclude",
@@ -125,12 +129,12 @@
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本节点",
-	"🌏 日韩台新",
+        "🌏 日韩台新",
         "🐢 直连",
         "📌 单选节点",
         "🇭🇰 香港节点",
         "🇸🇬 新加坡节点",
-	      "OT 其他节点",
+        "OT 其他节点",
         "🇺🇸 美国节点"
       ]
     },
@@ -144,7 +148,7 @@
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
-	"OT 其他节点",
+        "OT 其他节点",
         "🇺🇸 美国节点"
       ]
     },
@@ -155,7 +159,7 @@
         "🐢 直连",
         "🚀 默认出站",
         "📌 单选节点",
-	"🌏 日韩台新",
+        "🌏 日韩台新",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "OT 其他节点",
@@ -177,7 +181,7 @@
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
       ]
-    },	  
+    },
     {
       "tag": "🔎 Google",
       "type": "selector",
@@ -185,7 +189,7 @@
         "🚀 默认出站",
         "🐢 直连",
         "📌 单选节点",
-	"🌏 日韩台新",
+        "🌏 日韩台新",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "OT 其他节点",
@@ -200,7 +204,7 @@
         "🚀 默认出站",
         "🐢 直连",
         "📌 单选节点",
-	"🌏 日韩台新",
+        "🌏 日韩台新",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "OT 其他节点",
@@ -215,7 +219,7 @@
         "🚀 默认出站",
         "🐢 直连",
         "📌 单选节点",
-	"🌏 日韩台新",
+        "🌏 日韩台新",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "OT 其他节点",
@@ -230,7 +234,7 @@
         "🚀 默认出站",
         "🐢 直连",
         "📌 单选节点",
-	"🌏 日韩台新",
+        "🌏 日韩台新",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "OT 其他节点",
@@ -245,7 +249,7 @@
         "🚀 默认出站",
         "🐢 直连",
         "📌 单选节点",
-	"🌏 日韩台新",
+        "🌏 日韩台新",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "OT 其他节点",
@@ -260,7 +264,7 @@
         "🚀 默认出站",
         "🐢 直连",
         "📌 单选节点",
-	"🌏 日韩台新",
+        "🌏 日韩台新",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "OT 其他节点",
@@ -275,7 +279,7 @@
         "🚀 默认出站",
         "🐢 直连",
         "📌 单选节点",
-	"🌏 日韩台新",
+        "🌏 日韩台新",
         "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "OT 其他节点",
@@ -286,11 +290,15 @@
     {
       "tag": "🇭🇰 香港节点",
       "type": "urltest",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇭🇰|香港|HK|Hong Kong"]
+          "keywords": [
+            "🇭🇰|香港|HK|Hong Kong"
+          ]
         }
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -300,45 +308,61 @@
     {
       "tag": "🇯🇵 日本节点",
       "type": "selector",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇯🇵|日本|JP|Japan"]
+          "keywords": [
+            "🇯🇵|日本|JP|Japan"
+          ]
         }
       ]
     },
     {
       "tag": "🇸🇬 新加坡节点",
       "type": "selector",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇸🇬|新加坡|SG|Singapore"]
+          "keywords": [
+            "🇸🇬|新加坡|SG|Singapore"
+          ]
         }
       ]
     },
     {
       "tag": "🇺🇸 美国节点",
       "type": "selector",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇺🇸|美国|US|USA|United States"]
+          "keywords": [
+            "🇺🇸|美国|US|USA|United States"
+          ]
         }
       ]
     },
     {
       "tag": "OT 其他节点",
       "type": "selector",
-      "outbounds": ["{all}"],
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
-          "action":"exclude",
-	  "keywords":["🇭🇰|HK|hk|香港|香|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|美|剩余|流量|有效|时间|到期|expire|地址|网址|官网|自动|最优|最快|导航|失联|speed|订阅"]
-	}
+          "action": "exclude",
+          "keywords": [
+            "🇭🇰|HK|hk|香港|香|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|美|剩余|流量|有效|时间|到期|expire|地址|网址|官网|自动|最优|最快|导航|失联|speed|订阅"
+          ]
+        }
       ]
     },
     {
@@ -350,10 +374,10 @@
     "auto_detect_interface": true,
     "final": "🚀 默认出站",
     "rules": [
-     {
+      {
         "action": "sniff"
-     },
-     {
+      },
+      {
         "protocol": "dns",
         "action": "hijack-dns"
       },
@@ -374,19 +398,23 @@
         "outbound": "🐢 直连"
       },
       {
-        "rule_set": ["geosite_speedtest", "geoip_cn", "geosite_cn"],
+        "rule_set": [
+          "geosite_speedtest",
+          "geoip_cn",
+          "geosite_cn"
+        ],
         "outbound": "🐢 直连"
       },
       {
-	"ip_cidr": [
+        "ip_cidr": [
           "20.254.1.9/16",
           "20.253.1.23/16"
-        ], 
-	"domain":[
-           "4.ipw.cn",
-	   "dynv6.com",
-           "checkip.dynu.com",
-           "api.ipify.org"
+        ],
+        "domain": [
+          "4.ipw.cn",
+          "dynv6.com",
+          "checkip.dynu.com",
+          "api.ipify.org"
         ],
         "domain_suffix": [
           ".duckdns.org"
@@ -406,11 +434,17 @@
         "outbound": "▶️ Youtube"
       },
       {
-        "rule_set": ["geoip_google", "geosite_google"],
+        "rule_set": [
+          "geoip_google",
+          "geosite_google"
+        ],
         "outbound": "🔎 Google"
       },
       {
-        "rule_set": ["geoip_facebook", "geosite_meta"],
+        "rule_set": [
+          "geoip_facebook",
+          "geosite_meta"
+        ],
         "outbound": "🥽 Meta"
       },
       {
@@ -434,11 +468,17 @@
         "outbound": "🪟 Microsoft"
       },
       {
-        "rule_set": ["geoip_telegram", "geosite_telegram"],
+        "rule_set": [
+          "geoip_telegram",
+          "geosite_telegram"
+        ],
         "outbound": "✈️ Telegram"
       },
       {
-        "rule_set": ["geosite_netflix", "geoip_netflix"],
+        "rule_set": [
+          "geosite_netflix",
+          "geoip_netflix"
+        ],
         "outbound": "🎥 Netflix"
       },
       {
@@ -537,7 +577,7 @@
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-chat-!cn.srs",
         "download_detour": "🐢 直连"
-      },    
+      },
       {
         "tag": "geosite_github",
         "type": "remote",

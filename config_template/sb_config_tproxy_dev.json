@@ -272,9 +272,11 @@
           ]
         }
       ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
+        "url": "https://cloudflare.com/cdn-cgi/trace",
+        "interval": "10m",
+        "tolerance": 200,
+        "idle_timeout": "30m",
+        "interrupt_exist_connections": false
     },
     {
       "tag": "🇯🇵 日本节点",
@@ -335,9 +337,11 @@
           ]
         }
       ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
+        "url": "https://cloudflare.com/cdn-cgi/trace",
+        "interval": "10m",
+        "tolerance": 200,
+        "idle_timeout": "30m",
+        "interrupt_exist_connections": false
     },
     {
       "tag": "OT 其他节点",
@@ -368,9 +372,11 @@
           ]
         }
       ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
+        "url": "https://cloudflare.com/cdn-cgi/trace",
+        "interval": "10m",
+        "tolerance": 200,
+        "idle_timeout": "30m",
+        "interrupt_exist_connections": false
     },
     {
       "tag": "GLOBAL",

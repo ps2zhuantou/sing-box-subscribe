@@ -27,7 +27,7 @@
       },
       {
         "tag": "dns_proxy",
-        "address": "https://1.1.1.1/dns-query",
+        "address": "https://8.8.8.8/dns-query",
         "detour": "🚀 节点选择"
       }
     ],
@@ -274,7 +274,7 @@
       ],
         "url": "https://cloudflare.com/cdn-cgi/trace",
         "interval": "10m",
-        "tolerance": 200,
+        "tolerance": 50,
         "idle_timeout": "30m",
         "interrupt_exist_connections": false
     },
@@ -339,7 +339,7 @@
       ],
         "url": "https://cloudflare.com/cdn-cgi/trace",
         "interval": "10m",
-        "tolerance": 200,
+        "tolerance": 50,
         "idle_timeout": "30m",
         "interrupt_exist_connections": false
     },
@@ -374,7 +374,7 @@
       ],
         "url": "https://cloudflare.com/cdn-cgi/trace",
         "interval": "10m",
-        "tolerance": 200,
+        "tolerance": 50,
         "idle_timeout": "30m",
         "interrupt_exist_connections": false
     },

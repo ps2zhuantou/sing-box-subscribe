@@ -27,7 +27,7 @@
       },
       {
         "tag": "dns_proxy",
-        "address": "https://8.8.8.8/dns-query",
+        "address": "tls://8.8.8.8",
         "detour": "🚀 节点选择"
       }
     ],

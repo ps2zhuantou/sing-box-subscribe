@@ -434,13 +434,7 @@
                     "clash.razord.top",
                     "yacd.metacubex.one",
                     "yacd.haishan.me",
-                    "d.metacubex.one",
-                    "4.ipw.cn",
-                    "checkip.dynu.com",
-                    "api.ipify.org"
-                ],
-                "domain_suffix": [
-                    ".duckdns.org"
+                    "d.metacubex.one"
                 ],
                 "outbound": "🎯 全球直连"
             },

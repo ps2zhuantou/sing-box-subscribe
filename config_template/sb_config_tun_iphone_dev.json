@@ -410,15 +410,6 @@
           "20.254.1.9/16",
           "20.253.1.23/16"
         ],
-        "domain": [
-          "4.ipw.cn",
-          "dynv6.com",
-          "checkip.dynu.com",
-          "api.ipify.org"
-        ],
-        "domain_suffix": [
-          ".duckdns.org"
-        ],
         "outbound": "🐢 直连"
       },
       {

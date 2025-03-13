@@ -419,12 +419,7 @@
           "yacd.metacubex.one",
           "yacd.haishan.me",
           "d.metacubex.one",
-          "4.ipw.cn",
-          "checkip.dynu.com",
-          "api.ipify.org"
-        ],
-        "domain_suffix": [
-          ".duckdns.org"
+          "4.ipw.cn"
         ],
         "outbound": "🐢 直连"
       },

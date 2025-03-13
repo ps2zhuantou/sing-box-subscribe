@@ -430,12 +430,6 @@
                     "20.254.1.9/16",
                     "20.253.1.23/16"
                 ],
-                "domain": [
-                    "clash.razord.top",
-                    "yacd.metacubex.one",
-                    "yacd.haishan.me",
-                    "d.metacubex.one"
-                ],
                 "outbound": "🎯 全球直连"
             },
             {

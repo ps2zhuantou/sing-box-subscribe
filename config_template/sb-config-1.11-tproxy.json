@@ -414,16 +414,6 @@
         "outbound": "🐢 直连"
       },
       {
-        "domain": [
-          "clash.razord.top",
-          "yacd.metacubex.one",
-          "yacd.haishan.me",
-          "d.metacubex.one",
-          "4.ipw.cn"
-        ],
-        "outbound": "🐢 直连"
-      },
-      {
         "rule_set": "geosite_apple",
         "outbound": "🍎 Apple"
       },

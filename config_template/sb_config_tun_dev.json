@@ -55,7 +55,7 @@
             }
         ],
         "final": "dns_proxy",
-        "strategy": "ipv4_only"
+        "strategy": "prefer_ipv4"
     },
     "inbounds": [
         {

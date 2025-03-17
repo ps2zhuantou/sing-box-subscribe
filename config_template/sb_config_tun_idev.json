@@ -16,7 +16,7 @@
     "servers": [
       {
         "tag": "国外DNS",
-        "address": "tls://8.8.8.8",
+        "address": "https://1.1.1.1/dns-query",
         "detour": "🚀 默认出站"
       },
       {

@@ -8,12 +8,12 @@
     "servers": [
       {
         "tag": "国外DNS",
-        "address": "tls://8.8.8.8",
+        "address": "https://1.1.1.1/dns-query",
         "detour": "🚀 默认出站"
       },
       {
         "tag": "国内DNS",
-        "address": "223.5.5.5",
+        "address": "https://223.5.5.5/dns-query",
         "detour": "🐢 直连"
       }
     ],

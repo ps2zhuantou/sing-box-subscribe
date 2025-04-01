@@ -47,6 +47,7 @@
             },
             {
                 "rule_set": "geosite-cn",
+                "action": "route",
                 "server": "dns_direct"
             },
             {
@@ -67,15 +68,7 @@
             ],
             "mtu": 9000,
             "auto_route": true,
-            "strict_route": true,
-            "stack": "system",
-            "platform": {
-                "http_proxy": {
-                    "enabled": true,
-                    "server": "127.0.0.1",
-                    "server_port": 2080
-                }
-            }
+            "auto_redirect": true
         },
         {
             "type": "mixed",
@@ -414,12 +407,7 @@
                 "protocol": "dns",
                 "action": "hijack-dns"
             },
-            {
-                "ip_is_private": true,
-                "outbound": "🎯 全球直连"
-            },
-            {
-                "clash_mode": "direct",
+            {   "clash_mode": "direct", 
                 "outbound": "🎯 全球直连"
             },
             {

@@ -47,7 +47,7 @@
         "server": "国外DNS"
       }
     ],
-    "final": "国外DNS",
+    "final": "国内DNS",
     "strategy": "prefer_ipv4"
   },
   "ntp": {

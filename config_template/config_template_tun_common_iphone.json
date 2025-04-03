@@ -27,26 +27,26 @@
     "strategy": "ipv4_only"
   },
 
-"inbounds": [
-  {
-    "type": "tun",
-    "tag": "tun-in",
-    "address": [
-         "172.19.0.0/30"
-    ],
-    "mtu": 9000,
-    "auto_route": true
-    "strict_route": true,
-    "stack": "system",
-    "platform": {
-      "http_proxy": {
-        "enabled": true,
-        "server": "127.0.0.1",
-        "server_port": 2080
+  "inbounds": [
+    {
+      "tag": "tun-in",
+      "type": "tun",
+      "address": [
+        "172.19.0.0/30"
+      ],
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system",
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 2080
+        }
       }
     }
-  }
-],
+  ],
 
 "outbounds": [
   { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🔯 香港自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换", "♻️ 自动选择", "🎯 全球直连"] },

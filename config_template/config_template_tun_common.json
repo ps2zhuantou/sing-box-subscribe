@@ -31,8 +31,8 @@
    [
      {"outbound": "any", "server": "dns_direct", "disable_cache": true},
      {"clash_mode": "direct", "server": "dns_direct"},
+     {"rule_set": "geosite-cn", "server": "dns_direct"},
      {"clash_mode": "global", "server": "dns_proxy"},
-     {"rule_set": "geosite-cn", "action": "route","server": "dns_direct"},
      {"rule_set": "geosite-geolocation-!cn", "server": "dns_proxy"}
    ],
    "final": "dns_direct",
@@ -43,15 +43,17 @@
   {
     "type": "tun",
     "address": [
-         "172.18.0.1/30",
+         "172.19.0.0/30",
          "fdfe:dcba:9876::1/126"
     ],
     "mtu": 9000,
     "auto_route": true,
-    "auto_redirect": true
+    "strict_route": true,
+    "stack": "system"
   },
   {
     "type": "mixed",
+    "tag": "mixed-in",
     "listen": "127.0.0.1",
     "listen_port": 2080,
     "sniff": true,
@@ -89,7 +91,7 @@
    "final": "🐠 漏网之鱼",
    "rules": 
    [
-     {"action": "sniff"},
+     {"inbound": ["tun-in", "mixed-in"], "action": "sniff"},
      {"protocol": "dns", "action": "hijack-dns"},
      {"clash_mode": "direct", "outbound": "🎯 全球直连"},
      {"clash_mode": "global", "outbound": "GLOBAL"},

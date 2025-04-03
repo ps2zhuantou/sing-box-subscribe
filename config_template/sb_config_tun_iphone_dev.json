@@ -368,7 +368,7 @@
     "final": "🚀 默认出站",
     "rules": [
       {
-         "inbound": ["tun-in", "mixed-in"],
+         "inbound": ["tun-in"],
          "action": "sniff"
       },
       {

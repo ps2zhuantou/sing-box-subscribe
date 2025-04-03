@@ -54,9 +54,19 @@
   "inbounds": [
     {
       "type": "tun",
+      "tag": "tun-in",
       "address": "172.19.0.1/30",
       "mtu": 9000,
       "auto_route": true
+      "strict_route": true,
+      "stack": "system",
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 2080
+        }
+      }
     }
   ],
   "outbounds": [
@@ -358,7 +368,8 @@
     "final": "🚀 默认出站",
     "rules": [
       {
-        "action": "sniff"
+         "inbound": ["tun-in", "mixed-in"],
+         "action": "sniff"
       },
       {
         "protocol": "dns",

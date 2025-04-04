@@ -418,7 +418,7 @@
         "outbound": "🐢 直连"
       },
       {
-        "rule_set": ["geoip-apple", "geosite-apple", "geosite-amazon"],
+        "rule_set": ["geoip_apple", "geosite_apple", "geosite_amazon"],
         "outbound": "🍎 Apple"
       },
       {
@@ -516,14 +516,14 @@
         "download_detour": "🐢 直连"
       },
       {
-        "tag": "geoip-apple",
+        "tag": "geoip_apple",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/apple.srs",
         "download_detour": "🐢 直连"
       },
       {
-        "tag": "geosite-amazon",
+        "tag": "geosite_amazon",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/amazon.srs",

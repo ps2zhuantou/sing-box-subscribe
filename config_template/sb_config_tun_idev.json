@@ -529,7 +529,7 @@
         "download_detour": "🐢 直连"
       },
       {
-        "tag": "geoip-apple",
+        "tag": "geoip_apple",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/apple.srs",

@@ -409,7 +409,7 @@
         "outbound": "🐢 直连"
       },
       {
-        "rule_set": ["geoip-apple", "geosite-apple"],
+        "rule_set": ["geoip_apple", "geosite_apple"],
         "outbound": "🍎 Apple"
       },
       {

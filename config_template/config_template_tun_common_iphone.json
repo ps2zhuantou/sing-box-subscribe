@@ -9,13 +9,11 @@
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
-      {"query_type": "HTTPS", "action": "reject"},
-      {"rule_set": "geosite-fakeipfilter", "server": "local"},
-      {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1},
-      {"rule_set": "geosite-cn", "server": "local"}
+      {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
+      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"},
+      {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "final": "foreign",
-    "client_subnet": "223.5.5.0/24",
     "strategy": "prefer_ipv4",
     "independent_cache": true,
     "reverse_mapping": true
@@ -23,7 +21,7 @@
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择", "♻️ 自动选择"]},
     {"tag": "🧠 AI", "type": "selector", "outbounds": ["🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动"]},
-    {"tag": "📹 YouTube", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择"]},
+    {"tag": "📹 YouTube", "type": "selector", "outbounds": ["🇮🇳 印度手动", "🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择"]},
     {"tag": "🍀 Google", "type": "selector", "outbounds": ["🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择"]},
     {"tag": "👨‍💻 Github", "type": "selector", "outbounds": ["🇯🇵 日本手动", "🇭🇰 香港手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择"]},
     {"tag": "📲 Telegram", "type": "selector", "outbounds": ["🇸🇬 狮城手动", "🇭🇰 香港手动", "🇯🇵 日本手动", "🇺🇲 美国手动", "🐸 手动选择"]},
@@ -38,7 +36,8 @@
     {"tag": "🇭🇰 香港手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"]}, {"action": "exclude", "keywords": ["免费"]}]},
     {"tag": "🇯🇵 日本手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"]}, {"action": "exclude", "keywords": ["免费"]}]},
     {"tag": "🇸🇬 狮城手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}, {"action": "exclude", "keywords": ["免费"]}]},
-    {"tag": "🇺🇲 美国手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}]},
+    {"tag": "🇮🇳 印度手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["印度|IN|India|mumbai|bombay|delhi"]}, {"action": "exclude", "keywords": ["免费|尼"]}]},
+    {"tag": "🇺🇲 美国手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|加拿大|美|United States|Canada"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}]},
     {"tag": "🐸 手动选择", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["网站|流量|地址|剩余|过期|免费|时间|有效|Traffic|ExpireDate|GB|Expire Date"]}]},
     {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["官网|到期时间|剩余|流量|套餐|免费|订阅|全球直连|GB|Expire Date|Traffic|ExpireDate"]}], "interval": "10m", "tolerance": 100},
     {"tag": "🍃 延迟辅助", "type": "urltest", "outbounds": ["🚀 默认代理", "🎯 全球直连"]},
@@ -52,6 +51,8 @@
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
+      {"domain": ["mirrors.apqa.cn"], "outbound": "🚀 默认代理"},
+      {"ip_cidr": ["20.254.1.9/16", "20.253.1.23/16"], "outbound": "🎯 全球直连"},
       {"rule_set": "geosite-ai", "outbound": "🧠 AI"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
       {"rule_set": "geosite-google", "outbound": "🍀 Google"},
@@ -75,7 +76,6 @@
       {"rule_set": "geoip-cn", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
-      {"tag": "geosite-fakeipfilter", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter.json", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-ai", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-google", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs", "download_detour": "🎯 全球直连"},
@@ -104,7 +104,7 @@
   "inbounds": [
     {
       "type": "tun",
-      "address": [
+       "address": [
         "172.19.0.0/30",
         "fdfe:dcba:9876::0/126"
       ],
@@ -129,7 +129,7 @@
       "enabled": true
     },
     "clash_api": {
-      "external_controller": "127.0.0.1:9095",
+      "external_controller": "127.0.0.1:9090",
       "secret": "",
       "default_mode": "rule"
     }
